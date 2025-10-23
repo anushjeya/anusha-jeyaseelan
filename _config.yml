@@ -1,0 +1,68 @@
+# Site settings
+title: "Anusha Jeyaseelan"
+subtitle: "Technical Writer | Cloud | Machine Learning | API Documentation"
+email: anushajeyaseelan01@gmail.com
+description: >-
+  Welcome to my technical portfolio and blog. I write about cloud computing, 
+  AWS SageMaker, API documentation, and developer experience.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://anushajeyaseelan.github.io" # your GitHub Pages URL
+
+# Theme settings
+theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: "/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Author info
+author:
+  name: "Anusha Jeyaseelan"
+  avatar: "/assets/images/profile.jpg"
+  bio: "Technically proficient and innovative content strategist passionate about developer experience, cloud, and machine learning."
+  location: "San Francisco Bay Area"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/anushajeyaseelan/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/anushajeyaseelan"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:anushajeyaseelan01@gmail.com"
+
+# Social Sharing
+github_username: anushajeyaseelan
+linkedin_username: anushajeyaseelan
+
+# UI Defaults
+excerpt_separator: "<!--more-->"
+include:
+  - _pages
+  - _posts
+  - assets
+
+# Analytics (optional)
+google_analytics: G-XXXXXXXXXX  # Replace with your Google Analytics ID if available
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
