@@ -5,7 +5,7 @@ description: >-
   Sharing insights on documentation, developer tools, and writing for engineers.
 baseurl: "" # leave empty for user site
 url: "https://anushajeyaseelan.github.io" # replace with your GitHub username
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
