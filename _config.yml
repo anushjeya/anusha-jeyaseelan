@@ -8,14 +8,17 @@ baseurl: "" # leave empty for user site
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"
 
+destination: "./_site"
+
+
 markdown: kramdown
 highlighter: rouge
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
   - jekyll-paginate
+  - jekyll-remote-theme
 
 
 # Navigation
@@ -50,3 +53,5 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/anushajeyaseelan"
+
+destination: ./_site
