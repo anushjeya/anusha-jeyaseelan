@@ -19,6 +19,7 @@ gem "jekyll-feed"
 gem "jekyll-seo-tag"
 gem "jekyll-paginate"
 gem "jekyll-remote-theme", "~> 0.4.3"
+gem "jekyll-include-cache"
 
 # --- Theme ---
 gem "minimal-mistakes-jekyll"
