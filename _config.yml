@@ -3,12 +3,50 @@ email: anushajeyaseelan01@gmail.com
 description: >-
   Technical Writer | Cloud, APIs & Developer Infrastructure  
   Sharing insights on documentation, developer tools, and writing for engineers.
+url: "https://anushjeya.github.io"
 baseurl: "" # leave empty for user site
-url: "https://anushajeya.github.io" # replace with your GitHub username
-baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+markdown: kramdown
+highlighter: rouge
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-markdown: kramdown
-highlighter: rouge
+  - jekyll-remote-theme
+  - jekyll-paginate
+
+
+# Navigation
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      sidebar: true
+  - scope:
+      path: "claude-code-doc"
+    values:
+      layout: single
+      sidebar:
+        nav: "claude"
+
+author:
+  name: "Anusha Jeyaseelan"
+  avatar: "/assets/images/profile.jpg"
+  bio: "Technical Writer and Content Strategist | AWS | Developer Infrastructure"
+  location: "San Francisco Bay Area"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/anushajeyaseelan/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/anushajeyaseelan"
