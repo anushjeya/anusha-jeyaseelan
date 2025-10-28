@@ -13,10 +13,16 @@ collections:
 show_excerpts: false
 paginate: false
 
+remote_theme: "mmistakes/minimal-mistakes"
+
+
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 # Author info
 author:
