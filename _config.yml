@@ -1,6 +1,9 @@
 title: "Anusha Jeyaseelan"
 subtitle: "Technical Writer and Content Strategist | AWS | Developer Infrastructure"
 
+url: "https://anushjeya.github.io"
+baseurl: "/anusha-jeyaseelan"
+
 # Collections
 collections:
   posts:
