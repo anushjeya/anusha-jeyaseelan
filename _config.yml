@@ -1,56 +1,28 @@
 title: "Anusha Jeyaseelan"
-email: anushajeyaseelan01@gmail.com
-description: >-
-  Technical Writer | Cloud, APIs & Developer Infrastructure  
-  Sharing insights on documentation, developer tools, and writing for engineers.
-url: "https://anushjeya.github.io"
-baseurl: "" # leave empty for user site
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default"
+subtitle: "Technical Writer and Content Strategist | AWS | Developer Infrastructure"
 
-destination: "./_site"
-
-
-markdown: kramdown
-highlighter: rouge
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-remote-theme
-  - jekyll-include-cache
-
-
-# Navigation
+# Remove posts
 collections:
   posts:
     output: false
-
-collections:
   portfolio:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
 
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      sidebar: true
-  - scope:
-      path: "claude-code-doc"
-    values:
-      layout: single
-      sidebar:
-        nav: "claude"
+# Theme settings
+show_excerpts: false
+paginate: false
 
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Author info
 author:
   name: "Anusha Jeyaseelan"
   avatar: "/assets/images/profile.jpg"
-  bio: "Technical Writer and Content Strategist | AWS | Developer Infrastructure"
+  bio: "Technical Writer • Cloud & Developer Infrastructure"
   location: "San Francisco Bay Area"
   links:
     - label: "LinkedIn"
@@ -59,5 +31,3 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/anushajeyaseelan"
-
-destination: ./_site
