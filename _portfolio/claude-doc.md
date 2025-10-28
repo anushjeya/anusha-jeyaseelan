@@ -1,6 +1,6 @@
 ---
 title: "Claude Code Documentation"
-layout: portfolio
+layout: single
 ## image: /assets/images/claude.png
 description: "Comprehensive developer documentation for Claude Code at Anthropic."
 links:

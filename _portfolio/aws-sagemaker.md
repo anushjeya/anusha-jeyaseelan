@@ -1,6 +1,6 @@
 ---
 title: "AWS SageMaker Tutorial"
-layout: portfolio
+layout: single
 ##image: /assets/images/sagemaker.png
 description: "Hands-on image classification project using Amazon SageMaker."
 links:
