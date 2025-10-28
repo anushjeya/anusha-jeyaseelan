@@ -1,7 +1,7 @@
 title: "Anusha Jeyaseelan"
 subtitle: "Technical Writer and Content Strategist | AWS | Developer Infrastructure"
 
-# Remove posts
+# Collections
 collections:
   posts:
     output: false
@@ -9,19 +9,15 @@ collections:
     output: true
     permalink: /:collection/:name/
 
-# Theme settings
 show_excerpts: false
-paginate: false
 
 remote_theme: "mmistakes/minimal-mistakes"
 
-
-# Plugins
 plugins:
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
-  - jekyll-include-cache
 
 # Author info
 author:
