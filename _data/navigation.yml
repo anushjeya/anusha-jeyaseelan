@@ -1,9 +1,7 @@
-claude:
-  - title: "Overview"
-    url: /claude-code-doc/
-  - title: "Getting Started"
-    url: /claude-code-doc/getting-started/
-  - title: "Features"
-    url: /claude-code-doc/features/
-  - title: "Examples"
-    url: /claude-code-doc/examples/
+main:
+  - title: "Home"
+    url: /
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "About"
+    url: /about/
