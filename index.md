@@ -11,18 +11,18 @@ header:
 feature_row:
   - title: "Getting Started with an Omniverse Kit-Based App"
     excerpt: "Create your first Omniverse Kit-based app from the official Kit App template and customize it with extensions."
-    url: "/portfolio/omniverse-kit-app/"
-    btn_label: "Read case study"
+    url: "/portfolio/omniverse-getting-started/"
+    btn_label: "Learn more"
     btn_class: "btn--primary"
   - title: "Claude Code Documentation"
     excerpt: "Developer documentation for agentic coding workflows directly from the terminal."
     url: "/portfolio/claude-code-docs/"
-    btn_label: "Read case study"
+    btn_label: "Learn more"
     btn_class: "btn--primary"
   - title: "AWS SageMaker Image Classification"
     excerpt: "End-to-end tutorial for S3 data prep, training, and deployment on Amazon SageMaker."
     url: "/portfolio/sagemaker-image-classification/"
-    btn_label: "Read case study"
+    btn_label: "Learn more"
     btn_class: "btn--primary"
 
 ---
