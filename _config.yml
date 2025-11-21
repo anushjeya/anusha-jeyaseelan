@@ -15,7 +15,7 @@ collections:
 show_excerpts: false
 
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air"
+minimal_mistakes_skin: "aqua"
 
 sass:
   sass_dir: assets/css

@@ -1,16 +1,13 @@
 ---
 layout: splash
-title: "Anusha Jeyaseelan"
+title: "I specialize in cloud, developer infrastructure, and API documentation. I help developers ship faster by turning complex systems into clear, actionable content."
 permalink: /
 header:
-  overlay_color: "#f5f5f5"
-  overlay_filter: "0.0"
-  caption:
-intro:
-  - title: "Technical Writer and Content Strategist"
-    excerpt: >
-      I specialize in cloud, developer infrastructure, and API documentation.
-      I help developers ship faster by turning complex systems into clear, actionable content.
+  overlay_color: "#1a2c3a" # Retaining the dark, slightly desaturated blue-gray for the base filter
+  overlay_filter: "0.5" # Apply a 50% opacity filter to darken the image and ensure text readability
+  overlay_image: /assets/images/nodes.png # A placeholder for our new abstract image
+  caption: "Image by AI" # Giving credit to the source
+
 feature_row:
   - title: "Getting Started with an Omniverse Kit-Based App"
     excerpt: "Create your first Omniverse Kit-based app from the official Kit App template and customize it with extensions."
@@ -27,6 +24,7 @@ feature_row:
     url: "/portfolio/sagemaker-image-classification/"
     btn_label: "Read case study"
     btn_class: "btn--primary"
+
 ---
 
 {% include feature_row id="intro" type="center" %}

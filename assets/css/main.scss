@@ -1,72 +1,55 @@
 --- ---
-/* Optional: tweak primary accent color */
+/* Brand / accent color */
 $primary-color: #2563eb; // soft blue
 $link-color: $primary-color;
 
 @import "minimal-mistakes";
 
-/* Hero area */
-.home-hero {
-    max-width: 720px;
-    margin: 3rem auto 2.5rem;
+/* ---- GLOBAL ---- */
+
+body {
+    background-color: #ffffff;
+    /* clean white background */
 }
 
+/* Pull main content a bit closer to the hero banner */
+.page__content {
+    padding-top: 2.5rem;
+}
+
+/* ---- HOME / FEATURED WORK CARDS ---- */
+/* These styles enhance the cards created by Minimal Mistakes `feature_row` */
+
+.feature__wrapper {
+    max-width: 1100px;
+    margin: 0 auto 3rem;
+}
+
+.feature__wrapper .archive__item {
+    background: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    padding: 1.5rem 1.75rem;
+}
+
+.feature__wrapper .archive__item-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+/* Primary buttons: pill style */
+.btn--primary {
+    border-radius: 999px;
+    padding: 0.55rem 1.4rem;
+    font-size: 0.9rem;
+}
+
+/* Optional "eyebrow" style if you use it in text blocks */
 .home-eyebrow {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
     color: #6b7280;
-}
-
-.home-name {
-    font-size: 2.4rem;
-    margin-bottom: 0.75rem;
-}
-
-.home-tagline {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    color: #4b5563;
-}
-
-/* Section wrapper */
-.home-section {
-    max-width: 1100px;
-    margin: 0 auto 4rem;
-}
-
-/* Card grid */
-.home-card-grid {
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.75rem;
-}
-
-/* Individual card */
-.home-card {
-    background: #ffffff;
-    padding: 1.5rem 1.75rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(148, 163, 184, 0.4);
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
-}
-
-.home-card h3 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    font-size: 1.15rem;
-}
-
-.home-card p {
-    margin-bottom: 1.2rem;
-    font-size: 0.98rem;
-}
-
-/* Buttons: slightly pill-shaped */
-.btn.btn--primary {
-    border-radius: 999px;
-    padding: 0.55rem 1.4rem;
-    font-size: 0.9rem;
 }
