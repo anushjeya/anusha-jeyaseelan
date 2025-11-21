@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Claude Code Documentation - Anusha Jeyaseelan</title>
-<meta name="description" content="Comprehensive developer documentation for Claude Code at Anthropic.">
+<!-- begin _includes/seo.html --><title>Getting Started with an Omniverse Kit-Based App (Using kit-app-template) - Anusha Jeyaseelan</title>
+<meta name="description" content="Getting started documentation for creating Omniverse Kit-based app from the official NVIDIA Kit App template.">
 
 
   <meta name="author" content="Anusha Jeyaseelan">
@@ -23,11 +23,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Anusha Jeyaseelan">
-<meta property="og:title" content="Claude Code Documentation">
-<meta property="og:url" content="http://localhost:4000/anusha-jeyaseelan/portfolio/claude-doc/">
+<meta property="og:title" content="Getting Started with an Omniverse Kit-Based App (Using kit-app-template)">
+<meta property="og:url" content="http://localhost:4000/anusha-jeyaseelan/portfolio/omniverse-getting-started/">
 
 
-  <meta property="og:description" content="Comprehensive developer documentation for Claude Code at Anthropic.">
+  <meta property="og:description" content="Getting started documentation for creating Omniverse Kit-based app from the official NVIDIA Kit App template.">
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/anusha-jeyaseelan/portfolio/claude-doc/">
+<link rel="canonical" href="http://localhost:4000/anusha-jeyaseelan/portfolio/omniverse-getting-started/">
 
 
 
@@ -145,8 +145,8 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Claude Code Documentation">
-    <meta itemprop="description" content="developed and standardized documentation for Claude Code, an AI-assisted coding platform, focusing on API usability, configuration workflows, and developer onboarding.">
+    <meta itemprop="headline" content="Getting Started with an Omniverse Kit-Based App (Using kit-app-template)">
+    <meta itemprop="description" content="Prerequisites">
     <meta itemprop="datePublished" content="2025-11-20T18:47:23-08:00">
     
 
@@ -154,7 +154,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/anusha-jeyaseelan/portfolio/claude-doc/" itemprop="url">Claude Code Documentation
+            <a href="http://localhost:4000/anusha-jeyaseelan/portfolio/omniverse-getting-started/" itemprop="url">Getting Started with an Omniverse Kit-Based App (Using kit-app-template)
 </a>
           </h1>
           
@@ -165,7 +165,38 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>developed and standardized documentation for <strong>Claude Code</strong>, an AI-assisted coding platform, focusing on API usability, configuration workflows, and developer onboarding.</p>
+        <h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>NVIDIA Omniverse installed (Launcher + at least one Kit-based app, like USD Composer or Code)</li>
+  <li>Git and Python 3.x</li>
+  <li>Windows (PowerShell or cmd)</li>
+</ul>
+
+<hr />
+
+<h2 id="1-create-the-app-from-the-template">1. Create the app from the template</h2>
+
+<p>From a terminal:</p>
+
+<p>```powershell
+cd C:\Users&lt;you&gt;\dev
+git clone https://github.com/NVIDIA-Omniverse/kit-app-template.git
+cd kit-app-template
+.\repo.bat template new</p>
+
+<p>When prompted:</p>
+
+<p>Template type: app</p>
+
+<p>App name: anusha.hello.app (or your preferred name)</p>
+
+<p>Title: something like Anusha Hello App</p>
+
+<p>This generates a small Kit app plus a .kit file that defines its configuration.</p>
+
+<h2 id="run-the-app">Run the app</h2>
+
 
         
       </section>
@@ -186,10 +217,10 @@
       
   <nav class="pagination">
     
-      <a href="/anusha-jeyaseelan/portfolio/aws-sagemaker/" class="pagination--pager" title="AWS SageMaker Tutorial">Previous</a>
+      <a href="/anusha-jeyaseelan/portfolio/claude-doc/" class="pagination--pager" title="Claude Code Documentation">Previous</a>
     
     
-      <a href="/anusha-jeyaseelan/portfolio/omniverse-getting-started/" class="pagination--pager" title="Getting Started with an Omniverse Kit-Based App (Using kit-app-template)">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
