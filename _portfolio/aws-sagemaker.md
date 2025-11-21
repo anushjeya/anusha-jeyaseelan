@@ -1,7 +1,6 @@
 ---
 title: "AWS SageMaker Tutorial"
 layout: single
-image: /assets/images/sagemaker.png
 description: "Hands-on image classification project using Amazon SageMaker."
 links:
   - name: GitHub Repo

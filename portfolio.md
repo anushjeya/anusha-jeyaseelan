@@ -6,4 +6,4 @@ collection: portfolio
 entries_layout: grid
 ---
 
-Below are selected writing samples from Claude Code, AWS SageMaker, and NVIDIA Omniverse.
+Below are selected writing samples from my work on Claude Code, AWS SageMaker, and NVIDIA Omniverse.

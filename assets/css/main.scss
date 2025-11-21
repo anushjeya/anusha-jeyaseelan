@@ -1,0 +1,54 @@
+--- # front matter so Jekyll processes this file --- @charset "utf-8";
+
+/* ============================= */
+/* Accent color (deep teal)      */
+/* ============================= */
+
+$link-color: #0b7285; // used for links and other accents
+
+
+/* ============================= */
+/* Load Minimal Mistakes styles  */
+/* ============================= */
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+
+/* ============================= */
+/* Buttons                       */
+/* ============================= */
+
+.btn,
+.btn--primary {
+    background-color: #0b7285;
+    border-color: #0b7285;
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+    background-color: darken(#0b7285, 7%);
+    border-color: darken(#0b7285, 7%);
+}
+
+
+/* ============================= */
+/* Background + layout tweaks    */
+/* ============================= */
+
+/* Make the whole site background white instead of gray */
+body {
+    background-color: #ffffff;
+}
+
+/* Top nav background */
+.masthead,
+.masthead__inner-wrap {
+    background-color: #ffffff;
+}
+
+/* Main content area */
+.page,
+.page__inner-wrap,
+.page__content {
+    background-color: #fff
