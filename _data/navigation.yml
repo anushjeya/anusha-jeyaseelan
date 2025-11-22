@@ -12,7 +12,7 @@ omniverse_docs:
       - title: "Overview"
         url: /omniverse/overview/
       - title: "Install prerequisites"
-        url: /omniverse/install/
+        url: /omniverse/overview/#2-prerequisites
       - title: "Create a Kit app from template"
         url: /omniverse/create-app/
       - title: "Run the app on Windows"
