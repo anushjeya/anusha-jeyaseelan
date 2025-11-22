@@ -1,41 +1,55 @@
 ---
 layout: single
 title: "Omniverse Getting Started Guide (GSG)"
-description: "Comprehensive developer documentation for Claude Code at Anthropic."
-links:
-  - name: View Project
-    url: https://github.com/anusha/claude-doc
-toc: false
-tags: [omniverse, kit, getting-started]
+permalink: /omniverse/overview/
+classes: wide            # use full width, less wasted space
+sidebar:
+  nav: omniverse_docs    # uses the Omniverse sidebar nav
+author_profile: false
+toc: true
+toc_sticky: true
+
 ---
 
-## 1. What is Omniverse Kit?
+## 1. What you’ll build
 
-NVIDIA Omniverse is a platform for building OpenUSD and RTX-powered applications.
+This guide walks you through creating your first Omniverse Kit-based application on windows using NVIDIA’s official Kit App Template. By the end, you will:
 
-**Omniverse Kit** is the SDK used to build those desktop and cloud apps. This guide shows the quickest path to:
+- Install the core Omniverse tools you need
+- Clone the Kit App Template repo
+- Generate a new Kit-based app with `repo.bat template new`
+- Run and verify your app on Windows
+- Know where to start customizing behavior with extensions
 
-- Clone the official **Kit App Template**
-- Create your own Kit-based app
-- Run it locally on Windows
+This is aimed at developers who are comfortable with the command line but new to Omniverse Kit.
 
 ---
 
 ## 2. Prerequisites
 
-- NVIDIA GPU with recent drivers
-- NVIDIA Omniverse installed (Launcher + at least one Kit-based app, e.g., USD Composer or Code)
-- Git and Python 3.x installed
-- Windows (PowerShell or Command Prompt)
+Before you start, make sure you have:
+
+- Supported NVIDIA GPU with recent drivers
+- Windows 10/11
+- NVIDIA Omniverse Launcher installed and logged in
+- At least one Kit-based Omniverse app installed (for example, *Omniverse Code* or *USD Composer*)
+- Git installed and available in your `PATH`
+- PowerShell or Command Prompt
+
+> Tip: Open PowerShell as your main terminal for this tutorial. You can search for “PowerShell” in the Start menu and choose *Windows PowerShell* or *PowerShell 7*.
 
 ---
 
-## 3. Clone the Kit App Template
+## 3. Set up your workspace
 
-Open PowerShell or Command Prompt and choose a folder for your dev work:
+Pick a folder where you keep your dev projects. For example:
 
-```powershell
+```powershell cd C:\Users\<your-name>\dev```
+
+If this dev folder does not exist yet, create it:
+
+```mkdir C:\Users\<your-name>\dev
 cd C:\Users\<your-name>\dev
-git clone https://github.com/NVIDIA-Omniverse/kit-app-template.git
-cd kit-app-template
+```
 
+Replace `<your-name>` with your actual Windows username.

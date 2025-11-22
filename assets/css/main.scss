@@ -1,28 +1,101 @@
---- ---
 /* Brand / accent color */
-$primary-color: #2563eb; // soft blue
+$primary-color: #2563eb;
 $link-color: $primary-color;
+$content-background: #e9fdf6;
 
 @import "minimal-mistakes";
 
-/* ---- GLOBAL ---- */
+/* ---- TIGHTEST GLOBAL FONT & LINE HEIGHT FIX ---- */
+html {
+    font-size: 13px;
+    /* Smallest comfortable font size */
+}
 
 body {
+    line-height: 1.0;
+    /* The tightest practical line height */
     background-color: #ffffff;
-    /* clean white background */
 }
 
-/* Pull main content a bit closer to the hero banner */
+/* ---- TUTORIAL/PAGE CONTENT SPACING (MINIMAL GAPS) ---- */
+
 .page__content {
-    padding-top: 2.5rem;
+    background-color: $content-background;
+    padding-top: 1rem;
+    /* Extremely small top padding */
+    padding-bottom: 1rem;
 }
 
-/* ---- HOME / FEATURED WORK CARDS ---- */
-/* These styles enhance the cards created by Minimal Mistakes `feature_row` */
+/* Aggressively reduced margin for headings to hug the content */
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0.7rem;
+    /* Reduced top margin */
+    margin-bottom: 0.3rem;
+    /* Reduced bottom margin */
+    line-height: 0.8;
+    /* Ensure the line height for headings is also tight */
+}
+
+/* Paragraphs (p) - Minimal space between blocks of text */
+.page__content p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+/* TIGHTEST SPACING FOR LISTS (ul and ol) */
+.page__content ul,
+.page__content ol {
+    padding-left: 10px;
+    margin-top: 0.1rem;
+    /* Minimal space above the entire list */
+    margin-bottom: 0.1rem;
+    /* Minimal space below the entire list */
+}
+
+/* TIGHTEST SPACING BETWEEN INDIVIDUAL BULLETS/ITEMS */
+.page__content ul li,
+.page__content ol li {
+    margin-bottom: 0;
+    /* Zero margin for maximum density */
+    line-height: 0.8;
+    /* Matches the body line height */
+}
+
+/* Code blocks (pre) - Tighter spacing around code and smaller internal padding */
+.page__content pre {
+    margin: 0.3rem 0;
+    /* Minimal vertical margin around the block */
+    padding: 0.3rem 0.8rem;
+    /* Smaller internal padding */
+}
+
+/* --- REMOVE HORIZONTAL LINE (HR) --- */
+hr {
+    border: none;
+    /* Explicitly remove any border */
+    visibility: hidden;
+    /* Hide the element */
+    height: 0;
+    /* Ensure it takes up no vertical space */
+    margin: 0;
+    /* Ensure it has no margin or padding */
+}
+
+/* ---- OPTIONAL: SIDEBAR NAVIGATION SPACING FIX ---- */
+.nav__list-item a {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+
+/* ---- HOME / FEATURED WORK CARDS (No change) ---- */
 
 .feature__wrapper {
     max-width: 1100px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
 }
 
 .feature__wrapper .archive__item {
@@ -31,6 +104,12 @@ body {
     border: 1px solid rgba(148, 163, 184, 0.35);
     box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
     padding: 1.5rem 1.75rem;
+    transition: transform 0.2s;
+}
+
+.feature__wrapper .archive__item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.1);
 }
 
 .feature__wrapper .archive__item-title {
@@ -38,18 +117,23 @@ body {
     margin-bottom: 0.6rem;
 }
 
-/* Primary buttons: pill style */
 .btn--primary {
     border-radius: 999px;
     padding: 0.55rem 1.4rem;
     font-size: 0.9rem;
 }
 
-/* Optional "eyebrow" style if you use it in text blocks */
 .home-eyebrow {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
     color: #6b7280;
+}
+
+hr {
+    border: none;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
 }

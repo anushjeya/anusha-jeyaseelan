@@ -6,12 +6,11 @@ header:
   overlay_color: "#1a2c3a" # Retaining the dark, slightly desaturated blue-gray for the base filter
   overlay_filter: "0.5" # Apply a 50% opacity filter to darken the image and ensure text readability
   overlay_image: /assets/images/nodes.png # A placeholder for our new abstract image
-  caption: "Image by AI" # Giving credit to the source
 
 feature_row:
   - title: "Getting Started with an Omniverse Kit-Based App"
     excerpt: "Create your first Omniverse Kit-based app from the official Kit App template and customize it with extensions."
-    url: "/portfolio/omniverse-getting-started/"
+    url: "/omniverse/overview"
     btn_label: "Learn more"
     btn_class: "btn--primary"
   - title: "Claude Code Documentation"

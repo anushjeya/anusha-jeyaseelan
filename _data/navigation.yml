@@ -5,3 +5,15 @@ main:
     url: /portfolio/
   - title: "About"
     url: /about/
+
+omniverse_docs:
+  - title: "Omniverse Getting Started"
+    children:
+      - title: "Overview"
+        url: /omniverse/overview/
+      - title: "Install prerequisites"
+        url: /omniverse/install/
+      - title: "Create a Kit app from template"
+        url: /omniverse/create-app/
+      - title: "Run the app on Windows"
+        url: /omniverse/run-app/

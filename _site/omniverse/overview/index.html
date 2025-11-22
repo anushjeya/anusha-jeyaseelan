@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>AWS SageMaker Tutorial - Anusha Jeyaseelan</title>
-<meta name="description" content="Hands-on image classification project using Amazon SageMaker.">
+<!-- begin _includes/seo.html --><title>Omniverse Getting Started Guide (GSG) - Anusha Jeyaseelan</title>
+<meta name="description" content="1. What you’ll build">
 
 
   <meta name="author" content="Anusha Jeyaseelan">
@@ -23,11 +23,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Anusha Jeyaseelan">
-<meta property="og:title" content="AWS SageMaker Tutorial">
-<meta property="og:url" content="http://localhost:4000/anusha-jeyaseelan/portfolio/aws-sagemaker/">
+<meta property="og:title" content="Omniverse Getting Started Guide (GSG)">
+<meta property="og:url" content="http://localhost:4000/anusha-jeyaseelan/omniverse/overview/">
 
 
-  <meta property="og:description" content="Hands-on image classification project using Amazon SageMaker.">
+  <meta property="og:description" content="1. What you’ll build">
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/anusha-jeyaseelan/portfolio/aws-sagemaker/">
+<link rel="canonical" href="http://localhost:4000/anusha-jeyaseelan/omniverse/overview/">
 
 
 
@@ -82,7 +82,7 @@
 
   </head>
 
-  <body class="layout--single" dir="ltr">
+  <body class="layout--single wide" dir="ltr">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -142,11 +142,57 @@
 
 <div id="main" role="main">
   
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Omniverse Getting Started</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/anusha-jeyaseelan/omniverse/overview/" class="active">Overview</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/omniverse/install/">Install prerequisites</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/omniverse/create-app/">Create a Kit app from template</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/omniverse/run-app/">Run the app on Windows</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="AWS SageMaker Tutorial">
-    <meta itemprop="description" content="This project demonstrates machine learning model training using SageMaker, with a step-by-step guide on dataset preparation, S3 integration, and model deployment.">
+    <meta itemprop="headline" content="Omniverse Getting Started Guide (GSG)">
+    <meta itemprop="description" content="1. What you’ll build">
     <meta itemprop="datePublished" content="2025-11-22T11:35:09-08:00">
     
 
@@ -154,7 +200,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/anusha-jeyaseelan/portfolio/aws-sagemaker/" itemprop="url">AWS SageMaker Tutorial
+            <a href="http://localhost:4000/anusha-jeyaseelan/omniverse/overview/" itemprop="url">Omniverse Getting Started Guide (GSG)
 </a>
           </h1>
           
@@ -165,7 +211,61 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>This project demonstrates <strong>machine learning model training using SageMaker</strong>, with a step-by-step guide on dataset preparation, S3 integration, and model deployment.</p>
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#1-what-youll-build">1. What you’ll build</a></li><li><a href="#2-prerequisites">2. Prerequisites</a></li><li><a href="#3-set-up-your-workspace">3. Set up your workspace</a></li></ul>
+            </nav>
+          </aside>
+        
+        <h2 id="1-what-youll-build">1. What you’ll build</h2>
+
+<p>This guide walks you through creating your first Omniverse Kit-based application on windows using NVIDIA’s official Kit App Template. By the end, you will:</p>
+
+<ul>
+  <li>Install the core Omniverse tools you need</li>
+  <li>Clone the Kit App Template repo</li>
+  <li>Generate a new Kit-based app with <code class="language-plaintext highlighter-rouge">repo.bat template new</code></li>
+  <li>Run and verify your app on Windows</li>
+  <li>Know where to start customizing behavior with extensions</li>
+</ul>
+
+<p>This is aimed at developers who are comfortable with the command line but new to Omniverse Kit.</p>
+
+<hr />
+
+<h2 id="2-prerequisites">2. Prerequisites</h2>
+
+<p>Before you start, make sure you have:</p>
+
+<ul>
+  <li>Supported NVIDIA GPU with recent drivers</li>
+  <li>Windows 10/11</li>
+  <li>NVIDIA Omniverse Launcher installed and logged in</li>
+  <li>At least one Kit-based Omniverse app installed (for example, <em>Omniverse Code</em> or <em>USD Composer</em>)</li>
+  <li>Git installed and available in your <code class="language-plaintext highlighter-rouge">PATH</code></li>
+  <li>PowerShell or Command Prompt</li>
+</ul>
+
+<blockquote>
+  <p>Tip: Open PowerShell as your main terminal for this tutorial. You can search for “PowerShell” in the Start menu and choose <em>Windows PowerShell</em> or <em>PowerShell 7</em>.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="3-set-up-your-workspace">3. Set up your workspace</h2>
+
+<p>Pick a folder where you keep your dev projects. For example:</p>
+
+<p><code class="language-plaintext highlighter-rouge">powershell cd C:\Users\&lt;your-name&gt;\dev</code></p>
+
+<p>If this dev folder does not exist yet, create it:</p>
+
+<p><code class="language-plaintext highlighter-rouge">mkdir C:\Users\&lt;your-name&gt;\dev
+cd C:\Users\&lt;your-name&gt;\dev
+</code></p>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">&lt;your-name&gt;</code> with your actual Windows username.</p>
 
         
       </section>
@@ -186,10 +286,10 @@
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
+      <a href="/anusha-jeyaseelan/portfolio/claude-doc/" class="pagination--pager" title="Claude Code Documentation">Previous</a>
     
     
-      <a href="/anusha-jeyaseelan/portfolio/claude-doc/" class="pagination--pager" title="Claude Code Documentation">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
