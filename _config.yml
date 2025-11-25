@@ -21,6 +21,10 @@ sass:
   sass_dir: assets/css
   style: compressed
 
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
 
 plugins:
   - jekyll-include-cache

@@ -11,9 +11,9 @@ omniverse_docs:
     children:
       - title: "Overview"
         url: /omniverse/overview/
-      - title: "Install prerequisites"
+      - title: "Installation prerequisites"
         url: /omniverse/overview/#2-prerequisites
       - title: "Create a Kit app from template"
-        url: /omniverse/create-app/
+        url: /omniverse/overview/#3-set-up-your-workspace
       - title: "Run the app on Windows"
         url: /omniverse/run-app/
