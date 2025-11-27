@@ -93,16 +93,18 @@ If the app fails to start:
 <li>Fix any missing paths or extensions, then run the <code>.\repo.bat test</code> again.</li>
 </ul>
 
-## Try your first customization
+## 8. Try your first customization
 One of the easiest ways to customize your app is by choosing which extensions your app loads.
 <ol>
 <li>Open your app's <code>.kit</code> file. For example, <code>apps/my_kit_app.kit</code></li>
 <li>Look for a section named <code>[settings.app.exts]</code></li>
-<li>You can add or remove extensions here.
-<pre><code>
-[settings.app.exts]
-"omni.kit.window.console" = {}
-</code></pre>
-</li>
+<li>You can add or remove extensions here. <code>"omni.kit.window.console" = {}</code></li>
+<li>Save the file and rerun <code>.\repo.bat test</code></li>
 </ol>
+If the console extension is enabled, you’ll see an additional console window or menu entry, depending on your configuration.
+> Tip: The `.kit` file is your app’s composition root: it controls which pieces of functionality (extensions) are brought together to form your application.
+
 ## Next steps 
+Create your own extension under `exts/` and register it in your `.kit` file.
+Add a custom menu item, tool window, or viewport overlay. Integrate Omniverse features such as USD scene loading or RTX rendering. 
+This is a solid foundation for a more advanced tutorial where you walk through building a specific tool or workflow inside Omniverse Kit.
