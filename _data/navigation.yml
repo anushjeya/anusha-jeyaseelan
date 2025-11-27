@@ -16,4 +16,4 @@ omniverse_docs:
       - title: "Create a Kit app from template"
         url: /omniverse/overview/#3-set-up-your-workspace
       - title: "Run the app on Windows"
-        url: /omniverse/run-app/
+        url: /omniverse/overview/#7-run-your-app

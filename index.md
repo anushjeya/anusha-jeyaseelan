@@ -9,7 +9,7 @@ header:
 
 feature_row:
   - title: "Getting Started with an Omniverse Kit-Based App"
-    excerpt: "Create your first Omniverse Kit-based app from the official Kit App template and customize it with extensions."
+    excerpt: "Create your first Omniverse Kit-based app from the official NVIDIA Kit App Template and customize it with extensions."
     url: "/omniverse/overview"
     btn_label: "Learn more"
     btn_class: "btn--primary"

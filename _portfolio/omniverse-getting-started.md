@@ -19,7 +19,7 @@ This guide walks you through creating your first NVIDIA Omniverse Kit-App based 
 - Know where to start customizing behavior with extensions
 
 ## 2. Prerequisites
-Before you start the installation process,  make sure you have:
+Before you start the installation process, make sure you have:
 - Supported NVIDIA GPU with recent drivers
 - Windows 10/11
 - NVIDIA Omniverse Launcher installed and logged in
@@ -39,6 +39,7 @@ mkdir C:\Users\<your-name>\dev
 cd C:\Users\<your-name>\dev
 ```
 Replace `<your-name>` with your actual Windows username.
+
 ## 4. Clone the NVIDIA Kit App Template 
 Clone the official Kit App Template repository into your dev folder. Navigate into your new `dev` directory and clone the official template repository. 
 
@@ -54,4 +55,54 @@ Ensure you are in the ```kit-app-template``` folder and run:
 ```bash
 .\repo.bat template new
 ```
+You will be prompted for a few values, for instance:
+<ul>
+<li>App name - The name for the Kit-based app. For example, first_app</li>
+<li>Destination folder - You can either choose the default folder or any folder of your choice.</li>
+</ul>
 
+## 6. Explore the folder/project structure
+Open the app folder in your editor, such as Visual Studio Code. 
+<ul>
+  <li>apps/&lt;your_app_name&gt;.kit – The main configuration file that defines your Omniverse application. It specifies which extensions to load, window layout, and startup settings.</li>
+  <li>exts/ – A folder where your custom extensions live. Each extension is its own package with:
+    <ul>
+      <li>config/extension.toml – Defines extension metadata, load behavior, and required dependencies for Omniverse Kit.</li>
+      <li>exts/&lt;extension_name&gt;/ – Python files that define the behavior of your Omniverse extension.</li>
+    </ul>
+  </li>
+  <li>logs/ – Created after you run the app. Contains runtime logs useful for debugging startup failures.</li>
+</ul>
+
+## 7. Run your app 
+
+In your Windows command terminal, from the root of your generated app repo, run:
+
+```bash
+.\repo.bat test
+```
+
+This command launches your Kit-based app using the `.kit` file generated earlier. Logs and errors if any, are printed in the terminal. An Omniverse windows opens up. 
+
+To verify if the installation is successful, ensure that the title or app name matches the name you chose and the Omniverse viewport is open. 
+
+If the app fails to start: 
+<ul>
+<li>Check the terminal output in Visual Studio Code for Python or config errors.</li>
+<li>Review the files in the <code>logs/</code> directory.</li>
+<li>Fix any missing paths or extensions, then run the <code>.\repo.bat test</code> again.</li>
+</ul>
+
+## Try your first customization
+One of the easiest ways to customize your app is by choosing which extensions your app loads.
+<ol>
+<li>Open your app's <code>.kit</code> file. For example, <code>apps/my_kit_app.kit</code></li>
+<li>Look for a section named <code>[settings.app.exts]</code></li>
+<li>You can add or remove extensions here.
+<pre><code>
+[settings.app.exts]
+"omni.kit.window.console" = {}
+</code></pre>
+</li>
+</ol>
+## Next steps 
