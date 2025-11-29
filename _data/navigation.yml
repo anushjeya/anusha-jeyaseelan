@@ -7,7 +7,7 @@ main:
     url: /about/
 
 omniverse_docs:
-  - title: "Omniverse Getting Started"
+  - title: "Omniverse Kit-Based App Getting Started"
     children:
       - title: "Overview"
         url: /omniverse/overview/
@@ -17,3 +17,15 @@ omniverse_docs:
         url: /omniverse/overview/#3-set-up-your-workspace
       - title: "Run the app on Windows"
         url: /omniverse/overview/#7-run-your-app
+  
+  - title: "Creating a Custom Omniverse Kit Extension"
+    children:
+      - title: "Set up the extension project"
+      - url: /omniverse/kit-extension/
+      - title: "Build an user interface"
+      - url: /omniverse/kit-extension/#build-an-user-interface
+      - title: "Interact with USD"
+      - url: /omniverse/kit-extension/#interact-with-usd-create-geometry
+      - title: "Launch and test"
+      - url: /omniverse/kit-extension/#launch-and-test
+
