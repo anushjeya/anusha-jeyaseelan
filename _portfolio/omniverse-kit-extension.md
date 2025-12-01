@@ -25,6 +25,7 @@ Your new extension contains two important files:
 <li><code>extension.toml</code> - Defines metadata such as name, version, dependencies, and UI category.</li>
 <li><code>omni/my_first_extension/extension.py</code> - The main Python file where your extension logic runs.</li>
 </ul>
+All UI elements are created using the `omni.ui` framework inside the `extension.py` file.
 
 ## Build an user interface 
 Omniverse Kit uses the `omni.ui` framework for building lightweight, reactive UI.

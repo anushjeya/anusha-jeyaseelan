@@ -12,20 +12,20 @@ omniverse_docs:
       - title: "Overview"
         url: /omniverse/overview/
       - title: "Installation prerequisites"
-        url: /omniverse/overview/#2-prerequisites
+        url: /omniverse/overview/#prerequisites
       - title: "Create a Kit app from template"
-        url: /omniverse/overview/#3-set-up-your-workspace
-      - title: "Run the app on Windows"
-        url: /omniverse/overview/#7-run-your-app
+        url: /omniverse/overview/#set-up-your-workspace
+      - title: "Run the app"
+        url: /omniverse/overview/#run-your-app
   
   - title: "Creating a Custom Omniverse Kit Extension"
     children:
       - title: "Set up the extension project"
-      - url: /omniverse/kit-extension/
+        url: /omniverse/kit-extension/
       - title: "Build an user interface"
-      - url: /omniverse/kit-extension/#build-an-user-interface
+        url: /omniverse/kit-extension/#build-an-user-interface
       - title: "Interact with USD"
-      - url: /omniverse/kit-extension/#interact-with-usd-create-geometry
+        url: /omniverse/kit-extension/#interact-with-usd
       - title: "Launch and test"
-      - url: /omniverse/kit-extension/#launch-and-test
+        url: /omniverse/kit-extension/#launch-and-test
 
