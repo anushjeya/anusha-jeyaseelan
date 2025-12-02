@@ -129,6 +129,16 @@ hr {
     font-weight: bold;
 }
 
+/* Hide sidebar when there is no nav (keeps other pages intact) */
+.sidebar:empty {
+    display: none;
+}
+
+.page__content {
+    margin-left: 0;
+    /* ensure content uses full width when sidebar hidden */
+}
+
 .highlight .s {
     /* s is the class for a 'string' like a URL */
     color: #008000;

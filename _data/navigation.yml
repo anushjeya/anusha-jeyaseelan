@@ -6,6 +6,16 @@ main:
   - title: "About"
     url: /about/
 
+portfolio-nav:
+  - title: "Cisco Guides"
+    url: /portfolio/#cisco-technical-writing
+  - title: "Networking"
+    url: /portfolio/#networking-architecture
+  - title: "Kubernetes"
+    url: /portfolio/#kubernetes-cloud-native
+  - title: "Omniverse Kit"
+    url: /portfolio/#omniverse-guides
+    
 omniverse_docs:
   - title: "Omniverse Kit-Based App Getting Started"
     children:
