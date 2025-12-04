@@ -7,15 +7,15 @@ main:
     url: /about/
 
 portfolio-nav:
-  - title: "Cisco Guides"
-    url: /portfolio/#cisco-technical-writing
-  - title: "Networking"
-    url: /portfolio/#networking-architecture
-  - title: "Kubernetes"
-    url: /portfolio/#kubernetes-cloud-native
+  - title: "NVIDIA Omniverse"
+    url: /omniverse/kit-extension/
+  - title: "Cisco Portfolio"
+    url: /anusha-portfolio/cisco
+  - title: "AWS portfolio"
+    url: /anusha-portfolio/aws
   - title: "Omniverse Kit"
     url: /portfolio/#omniverse-guides
-    
+
 omniverse_docs:
   - title: "Omniverse Kit-Based App Getting Started"
     children:
