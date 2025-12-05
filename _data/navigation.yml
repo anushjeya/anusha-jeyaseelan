@@ -16,6 +16,12 @@ portfolio-nav:
   - title: "Omniverse Kit"
     url: /portfolio/#omniverse-guides
 
+amazon-sagemaker:
+  - title: "Amazon SageMaker tutorial"
+    children:
+      - title: "Amazon SageMaker overview"
+        url: /amazon-sagemaker/overview/
+
 claude_code:
   - title: "Claude Code Tutorial"
     children:

@@ -18,9 +18,9 @@ feature_row:
     url: "/claude-code/overview"
     btn_label: "Learn more"
     btn_class: "btn--primary"
-  - title: "AWS SageMaker Image Classification"
+  - title: "Amazon SageMaker Image Classification"
     excerpt: "End-to-end tutorial for S3 data prep, training, and deployment on Amazon SageMaker."
-    url: "/portfolio/sagemaker-image-classification/"
+    url: "/amazon-sagemaker/overview/"
     btn_label: "Learn more"
     btn_class: "btn--primary"
 
