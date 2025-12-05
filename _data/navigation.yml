@@ -19,8 +19,12 @@ portfolio-nav:
 amazon-sagemaker:
   - title: "Amazon SageMaker tutorial"
     children:
-      - title: "Amazon SageMaker overview"
-        url: /amazon-sagemaker/overview/
+      - title: "Environment setup"
+        url: /amazon-sagemaker/overview/#environment-setup
+      - title: "Training the model"
+        url: /amazon-sagemaker/overview/#training-the-model
+      - title: "Testing the prediction"
+        url: /amazon-sagemaker/overview/#testing-the-prediction
 
 claude_code:
   - title: "Claude Code Tutorial"
