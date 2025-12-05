@@ -4,35 +4,30 @@ title: "About Me"
 permalink: /about/
 ---
 
-## Hi, I’m Anusha Jeyaseelan  
+Hi, I’m Anusha Jeyaseelan.
 
-I’m a **Technical Writer and Content Strategist** with over 12 years of experience crafting clear, developer-focused documentation for **cloud computing, security, and machine learning platforms**.  
+I’m a Technical Writer and Content Strategist with over twelve years of experience working across cloud platforms, security services, and developer infrastructure. I’ve built my career around helping engineers and developers master complex systems including cloud-scale security analytics at AWS, hyperconverged infrastructure at Cisco, or large enterprise APIs at Walmart.
 
-I specialize in **API documentation, SDKs, developer guides, and content strategy** for large-scale products and developer platforms. My background includes working with **Amazon Web Services (AWS)** and **Cisco Systems**, where I created and standardized API documentation for services like **Elastic Load Balancing, Shield, WAF, Firewall Manager, and Security Lake**, as well as **Cisco Intersight** and **HyperFlex**.
+Across these roles, I’ve architected documentation for services such as Amazon Detective, Amazon Security Lake, Cisco HyperFlex, Cisco Intersight, and Intersight Kubernetes Service. My work spans API references, configuration guides, developer workflows, and end-to-end content strategies that support engineering, platform teams, and customer success.
 
-Currently, I’m exploring ways to make technical content more **interactive and educational** — from integrating tutorials with **Amazon SageMaker** to automating documentation workflows using **Python** and **machine learning**.
+Across these roles, I’ve architected documentation for services such as Amazon Detective, Amazon Security Lake, Cisco HyperFlex, Cisco Intersight, and Kubernetes lifecycle platforms. My work spans API references, configuration guides, developer workflows, and end-to-end content strategies that support engineering, platform teams, and customer success. I have architected AI-ready documentation systems by transforming fragmented content into structured, machine-readable datasets optimized for LLM consumption, embeddings, and retrieval models using Amazon Q, Walmart enterprise LLM, and Claude Code.
 
----
+<p><b>What I Specialize In</b></p>
+Over the years, I’ve discovered that my strengths naturally fall into a few high-impact areas:
+<ul>
+<li>Documentation Systems Architecture & AI Readiness: Designing scalable content models, building CI/CD publishing workflows (DocOps), creating reusable templates, and strategically structuring content for LLM integration and retrieval.</li>
+<li>API documentation & developer experience: Translating complex backend models, SDK behaviors, and distributed workflows into clear, actionable guidance that drives adoption and accelerates time-to-first-success.</li>
+<li>Cloud, security, and infrastructure platforms: Explaining systems that involve orchestration, lifecycle management, multi-account workflows, and cluster operations.</li>
+<li>Content systems & automation: Designing scalable documentation models, building CI/CD publishing workflows, and creating reusable templates and style patterns.</li>
+<li>Docs-as-code leadership: Leading teams through GitHub adoption and training groups of writers to work confidently in Git, automation, and building structured content repositories.</li>
 
-### What I’m Passionate About
-- Making **complex systems simple** for developers through great documentation  
-- Building **scalable content systems** using DITA, Swagger, and GitHub  
-- Exploring **AI-assisted writing** and developer experience design  
-- Mentoring writers and contributing to **content strategy frameworks**  
+I also enjoy learning new tools and technologies. For instance, exploring Python, experimenting with machine learning concepts, or understanding how services like Amazon SageMaker are used by developers, I like staying curious and expanding the technical depth I bring into my writing.
 
----
+<p></p>
+<p><b>A Bit About Me Personally</b></p>
 
-### Certifications
-- AWS Certified Machine Learning – Specialty (2024)  
-- AWS Cloud Quest: Cloud Practitioner  
-- Python Programming Certification  
+<p>I’m someone who genuinely loves breaking down complex subjects and technical architectures and then translating that understanding into clear, consumable information.</p>
 
----
+<p>Outside of my technical world, I love hiking, cooking, and volunteering with Science Olympiad. I enjoy working on educational side projects that blend communication and technology, especially anything that encourages students to explore engineering or computing.</p>
 
-### Outside of Work
-When I’m not writing or tinkering with cloud tools, I enjoy **hiking, cooking**, and volunteering with **Science Olympiad**. I also love creating educational projects that bridge **technology and communication**.
-
----
-
-**Let’s connect:**  
-[LinkedIn](https://www.linkedin.com/in/anushajeyaseelan/) • [GitHub](https://github.com/anushajeyaseelan) • [Email](mailto:anushajeyaseelan01@gmail.com)
+<p>What keeps me motivated is the impact: when documentation helps someone build faster, troubleshoot smarter, or understand a system with confidence, I know I’ve done my job well.</p>
