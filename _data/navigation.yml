@@ -13,8 +13,8 @@ portfolio-nav:
     url: /anusha-portfolio/cisco
   - title: "AWS portfolio"
     url: /anusha-portfolio/aws
-  - title: "Omniverse Kit"
-    url: /portfolio/#omniverse-guides
+  - title: "Amazon SageMaker"
+    url: /amazon-sagemaker/overview
 
 amazon-sagemaker:
   - title: "Amazon SageMaker tutorial"

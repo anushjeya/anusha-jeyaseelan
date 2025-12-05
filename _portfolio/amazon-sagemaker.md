@@ -1,7 +1,6 @@
 ---
 layout: single
 title: "End-to-End Image Classification with Amazon SageMaker"
-description: "Hands-on image classification project using Amazon SageMaker."
 permalink: /amazon-sagemaker/overview/
 classes: wide            
 sidebar:
