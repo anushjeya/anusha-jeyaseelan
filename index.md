@@ -15,7 +15,7 @@ feature_row:
     btn_class: "btn--primary"
   - title: "Claude Code Documentation"
     excerpt: "Developer documentation for agentic coding workflows directly from the terminal."
-    url: "/portfolio/claude-code-docs/"
+    url: "/claude-code/overview"
     btn_label: "Learn more"
     btn_class: "btn--primary"
   - title: "AWS SageMaker Image Classification"

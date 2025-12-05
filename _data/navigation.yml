@@ -16,14 +16,26 @@ portfolio-nav:
   - title: "Omniverse Kit"
     url: /portfolio/#omniverse-guides
 
-omniverse_docs:
-  - title: "Omniverse Kit-Based App Getting Started"
+claude_code:
+  - title: "Claude Code Tutorial"
     children:
-      - title: "Overview"
+      - title: "Build a Notes App"
+        url: /claude-code/overview/
+      - title: "Create a project"
+        url: /claude-code/overview/#create-the-project-with-claude-code
+      - title: "Connect frontend and backend"
+        url: /claude-code/overview/#connect-frontend-and-backend
+      - title: "Run your Notes App locally"
+        url: /claude-code/overview/#run-your-notes-app-locally
+
+omniverse_docs:
+  - title: "Omniverse Kit-based App Getting Started"
+    children:
+      - title: "Omniverse Kit App"
         url: /omniverse/overview/
       - title: "Installation prerequisites"
         url: /omniverse/overview/#prerequisites
-      - title: "Create a Kit app from template"
+      - title: "Create a Kit App from template"
         url: /omniverse/overview/#set-up-your-workspace
       - title: "Run the app"
         url: /omniverse/overview/#run-your-app

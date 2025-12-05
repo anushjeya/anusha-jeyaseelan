@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 ---
-This guide walks you through creating your first NVIDIA Omniverse Kit-App based application on windows using NVIDIA’s official Kit App Template using the command line. By the end, you will:
+This guide walks you through creating your first NVIDIA Omniverse Kit App based application on windows using NVIDIA’s official Kit App Template using the command line. By the end, you will:
 - Install the core Omniverse tools you need
 - Clone the Kit App Template repo
 - Generate a new Kit-based app with `repo.bat template new`
