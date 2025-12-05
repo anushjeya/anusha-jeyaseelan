@@ -9,7 +9,7 @@ description: "Detailed portfolio of my published developer documentation for Ama
 
 ---
 
-This portfolio showcases my work as a Technical Writer at Amazon Web Services, where I developed end-to-end developer documentation for AWS security analytics and threat investigation services. I specialized in API documentation, data lake ingestion workflows, and scalable content systems that support security engineers, cloud architects, and enterprise customers.
+This portfolio showcases my work as a Senior Technical Writer at Amazon Web Services, where I developed end-to-end developer documentation for AWS security analytics and threat investigation services. I specialized in API documentation, data lake ingestion workflows, and scalable content systems that support security engineers, cloud architects, and enterprise customers.
 
 ## Key Contributions:
 <ul>
