@@ -7,7 +7,7 @@ author_profile: false
 toc: false
 
 ---
-Marketplace API Documentation Transformation: This portfolio showcases my work as a Staff Content Strategist at Walmart Global Tech, where I led the transformation of Marketplace API documentation. My core focus ares are API reference design, developer guides, building scalable documentation systems, integrating Git based workflows, and AI-assisted authoring to enable engineering teams and global developers to deliver and consume content efficiently and consistently.
+This portfolio showcases my work as a Staff Content Strategist at Walmart Global Tech, where I led the transformation of Marketplace API documentation. My core focus ares are API reference design, developer guides, building scalable documentation systems, integrating Git based workflows, and AI-assisted authoring to enable engineering teams and global developers to deliver and consume content efficiently and consistently.
 
 
 ## Case Study: Content Strategy, Engineering Enablement & API System Modernization
