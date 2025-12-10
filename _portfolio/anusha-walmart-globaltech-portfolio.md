@@ -7,13 +7,13 @@ author_profile: false
 toc: false
 
 ---
-This portfolio showcases my work as a Staff Content Strategist at Walmart Global Tech, where I led the transformation of Marketplace API documentation. My core focus areas are API reference design, developer guides, building scalable documentation systems, integrating Git based workflows, and AI-assisted authoring to enable engineering teams and global developers to deliver and consume content efficiently and consistently.
+This portfolio showcases my work as a Staff Content Strategist at Walmart Global Tech, where I led the transformation of Marketplace API documentation. My core focus areas are API reference design, developer guides, building scalable documentation systems, integrating Git-based workflows, and AI-assisted authoring to enable engineering teams and global developers to deliver and consume content efficiently and consistently.
 
 
 ## Case Study: Content Strategy, Engineering Enablement & API System Modernization
 When I joined Walmart Global Tech, Marketplace API documentation lived across disconnected systems. It used legacy WordPress pages, inconsistent templates, and outdated workflows. Developers struggled to find the right information, technical writing teams wrote content differently, and API reference updates moved slowly through manual review cycles.
 
-In 2025, I led a multilayer transformation across the entire Marketplace API documentation ecosystem unifying platforms, standardizing structures, introducing Git based workflows, and integrating AI-driven authoring. This case study highlights how I rebuilt developer documentation for Marketplace APIs, modernized reference systems, and enabled teams across Walmart Global Tech to scale content delivery with speed and consistency.
+In 2025, I led a multilayer transformation across the entire Marketplace API documentation ecosystem unifying platforms, standardizing structures, introducing Git-based workflows, and integrating AI-driven authoring. This case study highlights how I rebuilt developer documentation for Marketplace APIs, modernized reference systems, and enabled teams across Walmart Global Tech to scale content delivery with speed and consistency.
 
 ---
 
@@ -74,7 +74,7 @@ I focused on four key pillars:
 - Designed a reusable multi-page layout:
   - Overview → Authentication → Core Workflows → Error Handling → Rate Limits
 - Created interactive workflow diagrams, prerequisites, cURL examples, and test cases.
-- Rewrote fragmented content into task based developer paths.
+- Rewrote fragmented content into task-based developer paths.
 
 ### Reference Implementations
 - Built clone and run REST API implementations in multiple languages.
@@ -99,7 +99,7 @@ I focused on four key pillars:
 ## 4. The Impact (After)
 **A unified, scalable developer documentation ecosystem**
 
-- 100+ APIs documented using standardized, Git based workflows.
+- 100+ APIs documented using standardized, Git-based workflows.
 - 30–40% faster content delivery due to templates + automated pipelines.
 - 25–30% higher documentation consistency across teams.
 - Support tickets dropped as developers could self serve core workflows.
@@ -115,7 +115,7 @@ I focused on four key pillars:
 ## 5. Extended Organizational Influence
 **Scaling documentation excellence across Walmart**
 
-- Trained technical writers from other product teams on Git based authoring and OpenAPI lifecycle management.
+- Trained technical writers from other product teams on Git-based authoring and OpenAPI lifecycle management.
 - Delivered workshops on developer focused documentation, quality scoring, and AI workflows.
 - Onboarded new writers using standardized templates and best practices.
 - Helped engineering teams produce cleaner API specs by embedding docs early in design.
