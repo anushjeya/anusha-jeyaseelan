@@ -2,8 +2,6 @@ Hi, I’m Anusha Jeyaseelan.
 
 I’m a Technical Writer and Content Strategist with over twelve years of experience working across cloud platforms, security services, and developer infrastructure. I’ve built my career around helping engineers and developers master complex systems including cloud-scale security analytics at AWS, hyperconverged infrastructure at Cisco, or large enterprise APIs at Walmart.
 
-Across these roles, I’ve architected documentation for services such as Amazon Detective, Amazon Security Lake, Cisco HyperFlex, Cisco Intersight, and Intersight Kubernetes Service. My work spans API references, configuration guides, developer workflows, and end-to-end content strategies that support engineering, platform teams, and customer success.
-
 Across these roles, I’ve architected documentation for services such as Amazon Detective, Amazon Security Lake, Cisco HyperFlex, Cisco Intersight, and Kubernetes lifecycle platforms. My work spans API references, configuration guides, developer workflows, and end-to-end content strategies that support engineering, platform teams, and customer success. I have architected AI-ready documentation systems by transforming fragmented content into structured, machine-readable datasets optimized for LLM consumption, embeddings, and retrieval models using Amazon Q, Walmart enterprise LLM, and Claude Code.
 
 <p><b>What I Specialize In</b></p>
@@ -25,5 +23,6 @@ Across these roles, I’ve architected documentation for services such as Amazon
 <p>What keeps me motivated is the impact: when documentation helps someone build faster, troubleshoot smarter, or understand a system with confidence, I know I’ve done my job well.</p>
 
  
+
 
 
