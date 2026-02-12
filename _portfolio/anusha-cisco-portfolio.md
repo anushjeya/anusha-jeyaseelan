@@ -5,6 +5,8 @@ permalink: /anusha-portfolio/cisco
 classes: wide
 layout: single
 toc: false
+sidebar:
+  nav: cisco_portfolio
 description: "Detailed portfolio of my published developer documentation for Cisco networking, Kubernetes, and HyperFlex hyperconverged infrastructure platforms."
 
 ---

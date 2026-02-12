@@ -1,0 +1,439 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>End-to-End Image Classification with Amazon SageMaker - Anusha Jeyaseelan</title>
+<meta name="description" content="This tutorial demonstrates how to build, train, and deploy a machine learning model using Amazon SageMaker. It covers classifying images using Transfer Learning, a technique that leverages a pre-trained model to solve a new problem with less data and computing time. This workflow illustrates how cloud infrastructure democratizes access to powerful AI tools, allowing developers to focus on application logic rather than underlying hardware.">
+
+
+  <meta name="author" content="Anusha Jeyaseelan">
+  
+  <meta property="article:author" content="Anusha Jeyaseelan">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Anusha Jeyaseelan">
+<meta property="og:title" content="End-to-End Image Classification with Amazon SageMaker">
+<meta property="og:url" content="http://localhost:4000/anusha-jeyaseelan/amazon-sagemaker/overview/">
+
+
+  <meta property="og:description" content="This tutorial demonstrates how to build, train, and deploy a machine learning model using Amazon SageMaker. It covers classifying images using Transfer Learning, a technique that leverages a pre-trained model to solve a new problem with less data and computing time. This workflow illustrates how cloud infrastructure democratizes access to powerful AI tools, allowing developers to focus on application logic rather than underlying hardware.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-02-11T23:09:30-08:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/anusha-jeyaseelan/amazon-sagemaker/overview/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/anusha-jeyaseelan/feed.xml" type="application/atom+xml" rel="alternate" title="Anusha Jeyaseelan Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/anusha-jeyaseelan/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/anusha-jeyaseelan/">
+          Anusha Jeyaseelan
+          <span class="site-subtitle">Technical Writer and Content Strategist | AWS | Developer Infrastructure</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/anusha-jeyaseelan/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/anusha-jeyaseelan/portfolio/"
+                
+                
+              >Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/anusha-jeyaseelan/about/"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Amazon SageMaker tutorial</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/anusha-jeyaseelan/amazon-sagemaker/overview/#environment-setup">Environment setup</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/amazon-sagemaker/overview/#training-the-model">Training the model</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/amazon-sagemaker/overview/#testing-the-prediction">Testing the prediction</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="End-to-End Image Classification with Amazon SageMaker">
+    <meta itemprop="description" content="This tutorial demonstrates how to build, train, and deploy a machine learning model using Amazon SageMaker. It covers classifying images using Transfer Learning, a technique that leverages a pre-trained model to solve a new problem with less data and computing time.This workflow illustrates how cloud infrastructure democratizes access to powerful AI tools, allowing developers to focus on application logic rather than underlying hardware.">
+    <meta itemprop="datePublished" content="2026-02-11T23:09:30-08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/anusha-jeyaseelan/amazon-sagemaker/overview/" itemprop="url">End-to-End Image Classification with Amazon SageMaker
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#architecture">Architecture</a></li><li><a href="#prerequisites">Prerequisites</a></li><li><a href="#environment-setup">Environment Setup</a></li><li><a href="#preparing-the-data">Preparing the Data</a></li><li><a href="#configuring-the-model-hyperparameters">Configuring the Model (Hyperparameters)</a></li><li><a href="#training-the-model">Training the Model</a></li><li><a href="#deployment--inference">Deployment &amp; Inference</a></li><li><a href="#testing-the-prediction">Testing the Prediction</a></li><li><a href="#cleanup">Cleanup</a></li><li><a href="#conclusion">Conclusion</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>This tutorial demonstrates how to build, train, and deploy a machine learning model using Amazon SageMaker. It covers classifying images using Transfer Learning, a technique that leverages a pre-trained model to solve a new problem with less data and computing time.
+This workflow illustrates how cloud infrastructure democratizes access to powerful AI tools, allowing developers to focus on application logic rather than underlying hardware.</p>
+
+<h2 id="architecture">Architecture</h2>
+<p>The workflow consists of four primary stages:</p>
+<ol>
+  <li>Storage: Store training and validation images in Amazon S3.</li>
+  <li>Training: Use a SageMaker Notebook Instance to launch a training job.</li>
+  <li>Model: Use the built-in SageMaker Image Classification algorithm.</li>
+  <li>Deployment: Deploy the model to a real-time HTTPS endpoint.</li>
+</ol>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To complete this tutorial, ensure the folliwing are available:</p>
+<ul>
+  <li>An AWS Account with permissions to access S3 and SageMaker.</li>
+  <li>An active SageMaker Notebook Instance.</li>
+</ul>
+
+<h2 id="environment-setup">Environment Setup</h2>
+
+<p>First, set up the environment by importing the necessary libraries and defining the IAM role that allows SageMaker to access the S3 bucket.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">sagemaker</span>
+<span class="kn">from</span> <span class="n">sagemaker</span> <span class="kn">import</span> <span class="n">get_execution_role</span>
+<span class="kn">import</span> <span class="n">boto3</span>
+
+<span class="c1"># Initialize the session and role
+</span><span class="n">session</span> <span class="o">=</span> <span class="n">sagemaker</span><span class="p">.</span><span class="nc">Session</span><span class="p">()</span>
+<span class="n">role</span> <span class="o">=</span> <span class="nf">get_execution_role</span><span class="p">()</span>
+<span class="n">bucket</span> <span class="o">=</span> <span class="n">session</span><span class="p">.</span><span class="nf">default_bucket</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Using S3 Bucket: </span><span class="si">{</span><span class="n">bucket</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Execution Role: </span><span class="si">{</span><span class="n">role</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="preparing-the-data">Preparing the Data</h2>
+<p>SageMaker requires data in specific formats. While the Image Classification algorithm accepts the RecordIO format, this tutorial uses raw images organized into S3 prefixes.</p>
+
+<p>Retrieve the specific algorithm image URI dynamically based on the region.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">sagemaker</span> <span class="kn">import</span> <span class="n">image_uris</span>
+
+<span class="c1"># Retrieve the training image for the Image Classification algorithm
+</span><span class="n">training_image</span> <span class="o">=</span> <span class="n">image_uris</span><span class="p">.</span><span class="nf">retrieve</span><span class="p">(</span>
+    <span class="n">region</span><span class="o">=</span><span class="n">session</span><span class="p">.</span><span class="n">boto_region_name</span><span class="p">,</span> 
+    <span class="n">framework</span><span class="o">=</span><span class="sh">'</span><span class="s">image-classification</span><span class="sh">'</span><span class="p">,</span> 
+    <span class="n">version</span><span class="o">=</span><span class="sh">'</span><span class="s">latest</span><span class="sh">'</span>
+<span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Training image URI: </span><span class="si">{</span><span class="n">training_image</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="configuring-the-model-hyperparameters">Configuring the Model (Hyperparameters)</h2>
+<p>Configure the <code class="language-plaintext highlighter-rouge">Estimator</code> object, which orchestrates the infrastructure. Choose a <strong>ResNet-50</strong> architecture and enable <strong>Transfer Learning</strong> to speed up the process.</p>
+
+<p>Key Configuration Details:</p>
+<ul>
+  <li>Instance Type: <code class="language-plaintext highlighter-rouge">ml.p2.xlarge</code> (GPU-accelerated for faster image processing).</li>
+  <li>Epochs: 10 (Number of passes through the dataset).</li>
+  <li>Classes: 2 (Binary classification for this demo).</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create the Estimator
+</span><span class="n">image_classifier</span> <span class="o">=</span> <span class="n">sagemaker</span><span class="p">.</span><span class="n">estimator</span><span class="p">.</span><span class="nc">Estimator</span><span class="p">(</span>
+    <span class="n">image_uri</span><span class="o">=</span><span class="n">training_image</span><span class="p">,</span>
+    <span class="n">role</span><span class="o">=</span><span class="n">role</span><span class="p">,</span>
+    <span class="n">instance_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">instance_type</span><span class="o">=</span><span class="sh">'</span><span class="s">ml.p2.xlarge</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">output_path</span><span class="o">=</span><span class="sa">f</span><span class="sh">'</span><span class="s">s3://</span><span class="si">{</span><span class="n">bucket</span><span class="si">}</span><span class="s">/output</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">sagemaker_session</span><span class="o">=</span><span class="n">session</span>
+<span class="p">)</span>
+
+<span class="c1"># Set Hyperparameters
+</span><span class="n">image_classifier</span><span class="p">.</span><span class="nf">set_hyperparameters</span><span class="p">(</span>
+    <span class="n">num_layers</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>               <span class="c1"># Using ResNet-50
+</span>    <span class="n">use_pretrained_model</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>      <span class="c1"># Enable Transfer Learning
+</span>    <span class="n">image_shape</span><span class="o">=</span><span class="sh">"</span><span class="s">3,224,224</span><span class="sh">"</span><span class="p">,</span>     <span class="c1"># Channels, Height, Width
+</span>    <span class="n">num_classes</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>               <span class="c1"># Example: 'Dog' vs 'Cat'
+</span>    <span class="n">mini_batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+    <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="training-the-model">Training the Model</h2>
+<p>With the configuration set, initiate the training job. SageMaker automatically provisions the EC2 instances, downloads the container image, pulls the data from S3, trains the model, and tears down the infrastructure upon completion.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define data channels
+</span><span class="n">train_data</span> <span class="o">=</span> <span class="n">sagemaker</span><span class="p">.</span><span class="n">inputs</span><span class="p">.</span><span class="nc">TrainingInput</span><span class="p">(</span>
+    <span class="sa">f</span><span class="sh">'</span><span class="s">s3://</span><span class="si">{</span><span class="n">bucket</span><span class="si">}</span><span class="s">/train</span><span class="sh">'</span><span class="p">,</span> 
+    <span class="n">content_type</span><span class="o">=</span><span class="sh">'</span><span class="s">application/x-image</span><span class="sh">'</span>
+<span class="p">)</span>
+<span class="n">validation_data</span> <span class="o">=</span> <span class="n">sagemaker</span><span class="p">.</span><span class="n">inputs</span><span class="p">.</span><span class="nc">TrainingInput</span><span class="p">(</span>
+    <span class="sa">f</span><span class="sh">'</span><span class="s">s3://</span><span class="si">{</span><span class="n">bucket</span><span class="si">}</span><span class="s">/validation</span><span class="sh">'</span><span class="p">,</span> 
+    <span class="n">content_type</span><span class="o">=</span><span class="sh">'</span><span class="s">application/x-image</span><span class="sh">'</span>
+<span class="p">)</span>
+
+<span class="c1"># Launch training
+</span><span class="n">image_classifier</span><span class="p">.</span><span class="nf">fit</span><span class="p">({</span><span class="sh">'</span><span class="s">train</span><span class="sh">'</span><span class="p">:</span> <span class="n">train_data</span><span class="p">,</span> <span class="sh">'</span><span class="s">validation</span><span class="sh">'</span><span class="p">:</span> <span class="n">validation_data</span><span class="p">})</span>
+</code></pre></div></div>
+
+<h2 id="deployment--inference">Deployment &amp; Inference</h2>
+<p>Once model training is complete, deploy the model to a persistent endpoint. This creates a REST API that applications can invoke to generate real-time predictions.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Deploy the model to an endpoint
+</span><span class="n">predictor</span> <span class="o">=</span> <span class="n">image_classifier</span><span class="p">.</span><span class="nf">deploy</span><span class="p">(</span>
+    <span class="n">initial_instance_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">instance_type</span><span class="o">=</span><span class="sh">'</span><span class="s">ml.m4.xlarge</span><span class="sh">'</span>
+<span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Endpoint deployed successfully.</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="testing-the-prediction">Testing the Prediction</h2>
+<p>To validate the model, send a test image payload to the newly created endpoint.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">json</span>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Load a test image
+</span><span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">test_image.jpg</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">rb</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="nf">read</span><span class="p">()</span>
+
+<span class="c1"># Invoke endpoint
+</span><span class="n">response</span> <span class="o">=</span> <span class="n">predictor</span><span class="p">.</span><span class="nf">predict</span><span class="p">(</span><span class="n">payload</span><span class="p">,</span> <span class="n">initial_args</span><span class="o">=</span><span class="p">{</span><span class="sh">'</span><span class="s">ContentType</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">application/x-image</span><span class="sh">'</span><span class="p">})</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="nf">loads</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+
+<span class="c1"># Output the probability
+</span><span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Probability scores: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="cleanup">Cleanup</h2>
+<p>Cost management is a critical aspect of cloud architecture. Delete the endpoint immediately after testing to avoid incurring charges for idle resources.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">predictor</span><span class="p">.</span><span class="nf">delete_endpoint</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Endpoint deleted.</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>This guide highlights the power of Amazon SageMaker’s managed services. By handling the heavy lifting of infrastructure provisioning and container management, SageMaker enables developers to focus on data quality and model parameters.</p>
+
+<p>Key Learnings:</p>
+<ul>
+  <li>Infrastructure as Code: Controlling ML infrastructure via Python SDKs.</li>
+  <li>Transfer Learning: Utilizing pre-trained networks to reduce training time.</li>
+  <li>Lifecycle Management: Managing the full flow from S3 ingestion to API deployment.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-02-11T23:09:30-08:00">February 11, 2026</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/anusha-jeyaseelan/anusha-portfolio/aws" class="pagination--pager" title="AWS Technical Writing Portfolio">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/anusha-jeyaseelan/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Anusha Jeyaseelan</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/anusha-jeyaseelan/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

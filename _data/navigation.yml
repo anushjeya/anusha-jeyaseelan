@@ -38,6 +38,56 @@ claude_code:
       - title: "Run your Notes App locally"
         url: /claude-code/overview/#run-your-notes-app-locally
 
+cisco_portfolio:
+  - title: "Cisco portfolio"
+    children:
+      - title: "Key contributions"
+        url: /anusha-portfolio/cisco
+      - title: Ciso HyperFlex Systems Hyperconverged Infrastructure
+        url: /anusha-portfolio/cisco#cisco-hyperflex-hx-series
+      - title: Cisco Intersight Cloud operations platform
+        url: /anusha-portfolio/cisco#cisco-intersight
+      - title: About my work at Cisco
+        url: /anusha-portfolio/cisco#about-my-work-at-cisco
+
+nvidia_fern:
+  - title: "NVIDIA Fern"
+    children:
+      - title: "Challenge"
+        url: /anusha-portfolio/nvidia-fern-portfolio#challenge
+      - title: "Strategy and Execution"
+        url: /anusha-portfolio/nvidia-fern-portfolio#strategy--execution
+      - title: "Technical Stack"
+        url: /anusha-portfolio/nvidia-fern-portfolio#technical-stack
+      - title: "Key takeaways"
+        url: /anusha-portfolio/nvidia-fern-portfolio#technical-stack
+
+aws_portfolio:
+  - title: "AWS Portfolio"
+    children:
+      - title: "Key contributions"
+        url: /anusha-portfolio/aws#key-contributions
+      - title: "Amazon Detective"
+        url: /anusha-portfolio/aws#amazon-detective
+      - title: "Amazon Security Lake"
+        url: /anusha-portfolio/aws#amazon-security-lake
+      - title: "About my work at AWS"
+        url: /anusha-portfolio/aws#about-my-work-at-aws
+
+walmart_portfolio:
+  - title: "Walmart Portfolio"
+    children:
+      - title: "The problem"
+        url: /anusha-portfolio/walmart-globaltech#1-the-problem
+      - title: "The strategy"
+        url: /anusha-portfolio/walmart-globaltech#2-the-strategy
+      - title: "The engineering"
+        url: anusha-portfolio/walmart-globaltech#3-the-build-technical-depth
+      - title: "The impact"
+        url: /anusha-portfolio/walmart-globaltech#4-the-impact-after
+      - title: "Organizational influence"
+        url: /anusha-portfolio/walmart-globaltech#5-extended-organizational-influence
+
 omniverse_docs:
   - title: "Omniverse Kit-based App Getting Started"
     children:
@@ -49,7 +99,7 @@ omniverse_docs:
         url: /omniverse/overview/#set-up-your-workspace
       - title: "Run the app"
         url: /omniverse/overview/#run-your-app
-  
+
   - title: "Creating a Custom Omniverse Kit Extension"
     children:
       - title: "Set up the extension project"
@@ -60,4 +110,3 @@ omniverse_docs:
         url: /omniverse/kit-extension/#interact-with-usd
       - title: "Launch and test"
         url: /omniverse/kit-extension/#launch-and-test
-

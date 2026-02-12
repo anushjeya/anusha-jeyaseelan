@@ -1,0 +1,400 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Build a Notes App with Claude Code - Anusha Jeyaseelan</title>
+<meta name="description" content="This tutorial walks you through creating a Notes application that lets users create, view, edit, and delete notes. You’ll generate the backend, frontend, database, tests, and final refinements entirely through iterative prompts using Claude Code.">
+
+
+  <meta name="author" content="Anusha Jeyaseelan">
+  
+  <meta property="article:author" content="Anusha Jeyaseelan">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Anusha Jeyaseelan">
+<meta property="og:title" content="Build a Notes App with Claude Code">
+<meta property="og:url" content="http://localhost:4000/anusha-jeyaseelan/claude-code/overview/">
+
+
+  <meta property="og:description" content="This tutorial walks you through creating a Notes application that lets users create, view, edit, and delete notes. You’ll generate the backend, frontend, database, tests, and final refinements entirely through iterative prompts using Claude Code.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-02-11T23:09:30-08:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/anusha-jeyaseelan/claude-code/overview/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/anusha-jeyaseelan/feed.xml" type="application/atom+xml" rel="alternate" title="Anusha Jeyaseelan Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/anusha-jeyaseelan/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/anusha-jeyaseelan/">
+          Anusha Jeyaseelan
+          <span class="site-subtitle">Technical Writer and Content Strategist | AWS | Developer Infrastructure</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/anusha-jeyaseelan/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/anusha-jeyaseelan/portfolio/"
+                
+                
+              >Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/anusha-jeyaseelan/about/"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Claude Code Tutorial</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/anusha-jeyaseelan/claude-code/overview/" class="active">Build a Notes App</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/claude-code/overview/#create-the-project-with-claude-code">Create a project</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/claude-code/overview/#connect-frontend-and-backend">Connect frontend and backend</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/claude-code/overview/#run-your-notes-app-locally">Run your Notes App locally</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Build a Notes App with Claude Code">
+    <meta itemprop="description" content="This tutorial walks you through creating a Notes application that lets users create, view, edit, and delete notes. You’ll generate the backend, frontend, database, tests, and final refinements entirely through iterative prompts using Claude Code.">
+    <meta itemprop="datePublished" content="2026-02-11T23:09:30-08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/anusha-jeyaseelan/claude-code/overview/" itemprop="url">Build a Notes App with Claude Code
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#what-youll-build">What You’ll Build</a></li><li><a href="#prerequisites">Prerequisites</a></li><li><a href="#create-the-project-with-claude-code">Create the project with Claude Code</a></li><li><a href="#build-the-backend-crud-api">Build the backend CRUD API</a></li><li><a href="#build-the-frontend">Build the frontend</a></li><li><a href="#connect-frontend-and-backend">Connect frontend and backend</a></li><li><a href="#optional-add-styling">(Optional) Add styling</a></li><li><a href="#add-unit-tests">Add unit tests</a></li><li><a href="#run-your-notes-app-locally">Run your Notes App locally</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>This tutorial walks you through creating a Notes application that lets users create, view, edit, and delete notes. You’ll generate the backend, frontend, database, tests, and final refinements entirely through iterative prompts using Claude Code.</p>
+
+<h2 id="what-youll-build">What You’ll Build</h2>
+<p>A simple Notes app consists of several key parts working together. The backend (server) handles storing and managing notes, while the database keeps all your notes safe. The frontend (UI) is what users see and interact with, allowing them to view, add, edit, or delete notes. The app uses CRUD functionality which is create, read, update, and delete to manage these actions. Unit tests ensure that everything works correctly. Upon completing this tutorial you’ll have created a digital notebook where you can write new notes, view existing ones, make changes, or remove notes whenever needed.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Claude Code access</li>
+<li>Basic understanding of Python and JavaScript</li>
+<li>Git installed (optional but recommended)</li>
+</ul>
+
+<h2 id="create-the-project-with-claude-code">Create the project with Claude Code</h2>
+<p>Step 1: Start a new workspace. In Claude Code navigate to <b>Claude</b> -&gt; <b>Code</b> -&gt; <b>New Workspace</b>.
+Step 2: Give high-level instructions.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">Create</span> <span class="n">a</span> <span class="k">full</span> <span class="n">stack</span> <span class="err">“</span><span class="n">Notes</span> <span class="n">App</span><span class="err">”</span> <span class="k">with</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">FastAPI</span> <span class="n">backend</span> <span class="k">using</span> <span class="n">SQLite</span>
+<span class="o">-</span> <span class="n">A</span> <span class="n">Notes</span> <span class="n">model</span><span class="p">:</span> <span class="n">id</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">,</span> <span class="n">created_at</span>
+<span class="o">-</span> <span class="n">CRUD</span> <span class="n">endpoints</span>
+<span class="o">-</span> <span class="n">React</span> <span class="n">frontend</span> <span class="k">with</span> <span class="n">pages</span> <span class="k">for</span> <span class="n">listing</span><span class="p">,</span> <span class="n">creating</span><span class="p">,</span> <span class="k">and</span> <span class="n">editing</span> <span class="n">notes</span>
+<span class="o">-</span> <span class="n">Clean</span> <span class="n">folder</span> <span class="k">structure</span> <span class="k">for</span> <span class="n">client</span> <span class="k">and</span> <span class="n">server</span>
+<span class="k">Add</span> <span class="n">placeholder</span> <span class="nb">text</span> <span class="k">where</span> <span class="n">needed</span><span class="p">.</span> <span class="n">Generate</span> <span class="n">minimal</span> <span class="n">but</span> <span class="n">working</span> <span class="n">code</span><span class="p">.</span>
+</code></pre></div></div>
+<p>Claude Code creates folders and files for the backend and frontend automatically, like a starter project.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">backend</span><span class="o">/</span>
+  <span class="nt">main</span><span class="nc">.py</span>
+  <span class="nt">database</span><span class="nc">.py</span>
+  <span class="nt">models</span><span class="nc">.py</span>
+  <span class="nt">routers</span><span class="o">/</span><span class="nt">notes</span><span class="nc">.py</span>
+<span class="nt">frontend</span><span class="o">/</span>
+  <span class="nt">src</span><span class="o">/</span><span class="nt">App</span><span class="nc">.jsx</span>
+  <span class="nt">src</span><span class="o">/</span><span class="nt">components</span><span class="o">/...</span>
+  <span class="nt">package</span><span class="nc">.json</span>
+</code></pre></div></div>
+<p>Step 3: Review the generated file structutre and apply all generated files.</p>
+
+<h2 id="build-the-backend-crud-api">Build the backend CRUD API</h2>
+<p>Step 1: Open <code class="language-plaintext highlighter-rouge">backend/routers/notes.py</code>.</p>
+
+<p>Step 2: Ask Claude Code to create routes which are API endpoints for notes.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Implement all CRUD routes <span class="k">for </span>the Notes model:
+- GET /notes
+- GET /notes/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
+- POST /notes
+- PUT /notes/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
+- DELETE /notes/<span class="o">{</span><span class="nb">id</span><span class="o">}</span>
+
+Use Python and SQLite
+</code></pre></div></div>
+<p>Step 3: Review what Claude Code generated and apply the changes. Ensure that all endpoints follow the same response style and validation errors are handled correctly.</p>
+
+<h2 id="build-the-frontend">Build the frontend</h2>
+<p>Step 1: Open <code class="language-plaintext highlighter-rouge">frontend/src/App.jsx</code>.</p>
+
+<p>Step 2: Prompt Claude Code.</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">Create</span> <span class="n">a</span> <span class="k">simple</span> <span class="n">UI</span> <span class="k">to</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">List</span> <span class="n">notes</span> <span class="c1">--Shows all saved notes</span>
+<span class="o">-</span> <span class="k">Add</span> <span class="n">a</span> <span class="k">new</span> <span class="n">note</span>
+<span class="o">-</span> <span class="n">Edit</span> <span class="k">and</span> <span class="k">delete</span> <span class="n">notes</span>
+<span class="k">Connect</span> <span class="n">it</span> <span class="k">to</span> <span class="n">the</span> <span class="n">backend</span> <span class="k">using</span> <span class="k">fetch</span><span class="p">()</span> <span class="c1">--fetch() allows frontend to talk to backend</span>
+</code></pre></div></div>
+<p>Step 3: Claude Code may also generate components like <code class="language-plaintext highlighter-rouge">NotesList.jsx</code> or <code class="language-plaintext highlighter-rouge">NoteEditor.jsx</code>. Apply the changes.</p>
+
+<h2 id="connect-frontend-and-backend">Connect frontend and backend</h2>
+<p>Step 1: Ask Claude Code to create an API utility file <code class="language-plaintext highlighter-rouge">api.js</code> with these functions.</p>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">getNotes</span><span class="o">(),</span> <span class="nt">getNote</span><span class="o">(</span><span class="nt">id</span><span class="o">),</span> <span class="nt">createNote</span><span class="o">(),</span> <span class="nt">updateNote</span><span class="o">(),</span> <span class="nt">deleteNote</span><span class="o">()</span>
+</code></pre></div></div>
+<p>Step 2: Link these functions in your React components so the app can display real data from the backend. 
+The frontend talks to http://localhost:8000 by default.</p>
+
+<h2 id="optional-add-styling">(Optional) Add styling</h2>
+<p>Ask Claude Code to add simple CSS styling. This makes the Notes app visually clean and easier to use.</p>
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">Add simple CSS styling:
+</span><span class="gd">- Clear spacing
+- Easy to read layout
+- Minimal colors
+</span></code></pre></div></div>
+
+<h2 id="add-unit-tests">Add unit tests</h2>
+<p>Before you launch the app to production run a few tests. This is to ensure that the backend logic of the Notes App works correctly.</p>
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">Create simple pytest unit tests for backend:
+</span><span class="gd">- Test creating a note
+- Test reading notes
+- Test editing a note
+- Test deleting a note
+</span><span class="p">Use a temporary SQLite database for testing
+</span></code></pre></div></div>
+
+<h2 id="run-your-notes-app-locally">Run your Notes App locally</h2>
+<p>Step 1: Start the backend.</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">uvicorn</span> <span class="n">backend</span><span class="p">.</span><span class="n">main</span><span class="p">:</span><span class="n">app</span> <span class="c1">--reload</span>
+</code></pre></div></div>
+<p>Step 2: Start the frontend.</p>
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">npm</span><span class="w"> </span><span class="nx">install</span><span class="w">
+</span><span class="n">npm</span><span class="w"> </span><span class="nx">start</span><span class="w">
+</span></code></pre></div></div>
+<p>Step 3: Open your browser: http://localhost:3000</p>
+
+<p>Congratulations! You should see your Notes App working. You can now add, view, edit, and delete notes.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-02-11T23:09:30-08:00">February 11, 2026</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/anusha-jeyaseelan/anusha-portfolio/walmart-globaltech" class="pagination--pager" title="Walmart Global Tech Portfolio">Previous</a>
+    
+    
+      <a href="/anusha-jeyaseelan/anusha-portfolio/nvidia-fern-portfolio" class="pagination--pager" title="Architecting NVIDIA’s Documentation-as-a-Platform">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/anusha-jeyaseelan/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Anusha Jeyaseelan</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/anusha-jeyaseelan/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

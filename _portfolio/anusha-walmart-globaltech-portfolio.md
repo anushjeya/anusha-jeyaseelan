@@ -2,9 +2,10 @@
 layout: single
 title: "Walmart Global Tech Portfolio"
 permalink: /anusha-portfolio/walmart-globaltech
+sidebar:
+  nav: walmart_portfolio
 classes: wide              
 author_profile: false
-toc: false
 
 ---
 This portfolio showcases my work as a Staff Content Strategist at Walmart Global Tech, where I led the transformation of Marketplace API documentation. My core focus areas are API reference design, developer guides, building scalable documentation systems, integrating Git-based workflows, and AI-assisted authoring to enable engineering teams and global developers to deliver and consume content efficiently and consistently.

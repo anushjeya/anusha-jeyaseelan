@@ -5,6 +5,8 @@ permalink: /anusha-portfolio/aws
 classes: wide
 layout: single
 toc: false
+sidebar:
+  nav: aws_portfolio
 description: "Detailed portfolio of my published developer documentation for Amazon Web Services (AWS)."
 
 ---

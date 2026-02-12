@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Omniverse Getting Started Guide (GSG) - Anusha Jeyaseelan</title>
-<meta name="description" content="1. What you’ll build">
+<meta name="description" content="This guide walks you through creating your first NVIDIA Omniverse Kit App based application on windows using NVIDIA’s official Kit App Template using the command line. By the end, you will:    Install the core Omniverse tools you need   Clone the Kit App Template repo   Generate a new Kit-based app with repo.bat template new   Run and verify your app on Windows   Know where to start customizing behavior with extensions">
 
 
   <meta name="author" content="Anusha Jeyaseelan">
@@ -27,7 +27,7 @@
 <meta property="og:url" content="http://localhost:4000/anusha-jeyaseelan/omniverse/overview/">
 
 
-  <meta property="og:description" content="1. What you’ll build">
+  <meta property="og:description" content="This guide walks you through creating your first NVIDIA Omniverse Kit App based application on windows using NVIDIA’s official Kit App Template using the command line. By the end, you will:    Install the core Omniverse tools you need   Clone the Kit App Template repo   Generate a new Kit-based app with repo.bat template new   Run and verify your app on Windows   Know where to start customizing behavior with extensions">
 
 
 
@@ -35,7 +35,7 @@
 
 
 
-  <meta property="article:published_time" content="2025-11-22T11:35:09-08:00">
+  <meta property="article:published_time" content="2026-02-11T23:09:30-08:00">
 
 
 
@@ -162,19 +162,39 @@
       
         <li>
           
-            <span class="nav__sub-title">Omniverse Getting Started</span>
+            <span class="nav__sub-title">Omniverse Kit-based App Getting Started</span>
           
 
           
           <ul>
             
-              <li><a href="/anusha-jeyaseelan/omniverse/overview/" class="active">Overview</a></li>
+              <li><a href="/anusha-jeyaseelan/omniverse/overview/" class="active">Omniverse Kit App</a></li>
             
-              <li><a href="/anusha-jeyaseelan/omniverse/install/">Install prerequisites</a></li>
+              <li><a href="/anusha-jeyaseelan/omniverse/overview/#prerequisites">Installation prerequisites</a></li>
             
-              <li><a href="/anusha-jeyaseelan/omniverse/create-app/">Create a Kit app from template</a></li>
+              <li><a href="/anusha-jeyaseelan/omniverse/overview/#set-up-your-workspace">Create a Kit App from template</a></li>
             
-              <li><a href="/anusha-jeyaseelan/omniverse/run-app/">Run the app on Windows</a></li>
+              <li><a href="/anusha-jeyaseelan/omniverse/overview/#run-your-app">Run the app</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Creating a Custom Omniverse Kit Extension</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/anusha-jeyaseelan/omniverse/kit-extension/">Set up the extension project</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/omniverse/kit-extension/#build-an-user-interface">Build an user interface</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/omniverse/kit-extension/#interact-with-usd">Interact with USD</a></li>
+            
+              <li><a href="/anusha-jeyaseelan/omniverse/kit-extension/#launch-and-test">Launch and test</a></li>
             
           </ul>
           
@@ -192,8 +212,8 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Omniverse Getting Started Guide (GSG)">
-    <meta itemprop="description" content="1. What you’ll build">
-    <meta itemprop="datePublished" content="2025-11-22T11:35:09-08:00">
+    <meta itemprop="description" content="This guide walks you through creating your first NVIDIA Omniverse Kit App based application on windows using NVIDIA’s official Kit App Template using the command line. By the end, you will:  Install the core Omniverse tools you need  Clone the Kit App Template repo  Generate a new Kit-based app with repo.bat template new  Run and verify your app on Windows  Know where to start customizing behavior with extensions">
+    <meta itemprop="datePublished" content="2026-02-11T23:09:30-08:00">
     
 
     <div class="page__inner-wrap">
@@ -214,14 +234,11 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#1-what-youll-build">1. What you’ll build</a></li><li><a href="#2-prerequisites">2. Prerequisites</a></li><li><a href="#3-set-up-your-workspace">3. Set up your workspace</a></li></ul>
+              <ul class="toc__menu"><li><a href="#prerequisites">Prerequisites</a></li><li><a href="#set-up-your-workspace">Set up your workspace</a></li><li><a href="#clone-the-nvidia-kit-app-template">Clone the NVIDIA Kit App Template</a></li><li><a href="#create-a-new-nvidia-kit-based-app-from-the-template">Create a new NVIDIA Kit-based app from the template</a></li><li><a href="#explore-the-folderproject-structure">Explore the folder/project structure</a></li><li><a href="#run-your-app">Run your app</a></li><li><a href="#try-your-first-customization">Try your first customization</a></li><li><a href="#next-steps">Next steps</a></li></ul>
             </nav>
           </aside>
         
-        <h2 id="1-what-youll-build">1. What you’ll build</h2>
-
-<p>This guide walks you through creating your first Omniverse Kit-based application on windows using NVIDIA’s official Kit App Template. By the end, you will:</p>
-
+        <p>This guide walks you through creating your first NVIDIA Omniverse Kit App based application on windows using NVIDIA’s official Kit App Template using the command line. By the end, you will:</p>
 <ul>
   <li>Install the core Omniverse tools you need</li>
   <li>Clone the Kit App Template repo</li>
@@ -230,42 +247,94 @@
   <li>Know where to start customizing behavior with extensions</li>
 </ul>
 
-<p>This is aimed at developers who are comfortable with the command line but new to Omniverse Kit.</p>
-
-<hr />
-
-<h2 id="2-prerequisites">2. Prerequisites</h2>
-
-<p>Before you start, make sure you have:</p>
-
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you start the installation process, make sure you have:</p>
 <ul>
   <li>Supported NVIDIA GPU with recent drivers</li>
   <li>Windows 10/11</li>
   <li>NVIDIA Omniverse Launcher installed and logged in</li>
   <li>At least one Kit-based Omniverse app installed (for example, <em>Omniverse Code</em> or <em>USD Composer</em>)</li>
   <li>Git installed and available in your <code class="language-plaintext highlighter-rouge">PATH</code></li>
-  <li>PowerShell or Command Prompt</li>
+  <li>PowerShell or Command Prompt
+    <blockquote>
+      <p>Tip: Open PowerShell as your main terminal for this tutorial. You can search for “PowerShell” in the Start menu and choose <em>Windows PowerShell</em> or <em>PowerShell 7</em>.</p>
+    </blockquote>
+  </li>
 </ul>
 
+<h2 id="set-up-your-workspace">Set up your workspace</h2>
+<p>Pick a folder where you keep want to install the Kit App Template. For example:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>C:<span class="se">\U</span>sers<span class="se">\&lt;</span>your-name&gt;<span class="se">\d</span>ev
+</code></pre></div></div>
+<p>If you want to create a new folder, use:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>C:<span class="se">\U</span>sers<span class="se">\&lt;</span>your-name&gt;<span class="se">\d</span>ev 
+<span class="nb">cd </span>C:<span class="se">\U</span>sers<span class="se">\&lt;</span>your-name&gt;<span class="se">\d</span>ev
+</code></pre></div></div>
+<p>Replace <code class="language-plaintext highlighter-rouge">&lt;your-name&gt;</code> with your actual Windows username.</p>
+
+<h2 id="clone-the-nvidia-kit-app-template">Clone the NVIDIA Kit App Template</h2>
+<p>Clone the official Kit App Template repository into your dev folder. Navigate into your new <code class="language-plaintext highlighter-rouge">dev</code> directory and clone the official template repository.</p>
+
+<p>The following command downloads the Kit App Template into your local folder. You should now see files such as <code class="language-plaintext highlighter-rouge">repo.bat</code>, <code class="language-plaintext highlighter-rouge">source/</code>, <code class="language-plaintext highlighter-rouge">apps/</code>, and <code class="language-plaintext highlighter-rouge">exts/</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/NVIDIA-Omniverse/kit-app-template.git
+<span class="nb">cd </span>kit-app-template
+</code></pre></div></div>
+<h2 id="create-a-new-nvidia-kit-based-app-from-the-template">Create a new NVIDIA Kit-based app from the template</h2>
+<p>The Kit App template includes a helper script, <code class="language-plaintext highlighter-rouge">repo.bat</code> which builds out the new app for you. 
+Ensure you are in the <code class="language-plaintext highlighter-rouge">kit-app-template</code> folder and run:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.<span class="se">\r</span>epo.bat template new
+</code></pre></div></div>
+<p>You will be prompted for a few values, for instance:</p>
+<ul>
+<li>App name - The name for the Kit-based app. For example, first_app</li>
+<li>Destination folder - You can either choose the default folder or any folder of your choice.</li>
+</ul>
+
+<h2 id="explore-the-folderproject-structure">Explore the folder/project structure</h2>
+<p>Open the app folder in your editor, such as Visual Studio Code.</p>
+<ul>
+  <li>apps/&lt;your_app_name&gt;.kit – The main configuration file that defines your Omniverse application. It specifies which extensions to load, window layout, and startup settings.</li>
+  <li>exts/ – A folder where your custom extensions live. Each extension is its own package with:
+    <ul>
+      <li>config/extension.toml – Defines extension metadata, load behavior, and required dependencies for Omniverse Kit.</li>
+      <li>exts/&lt;extension_name&gt;/ – Python files that define the behavior of your Omniverse extension.</li>
+    </ul>
+  </li>
+  <li>logs/ – Created after you run the app. Contains runtime logs useful for debugging startup failures.</li>
+</ul>
+
+<h2 id="run-your-app">Run your app</h2>
+
+<p>In your Windows command terminal, from the root of your generated app repo, run:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.<span class="se">\r</span>epo.bat <span class="nb">test</span>
+</code></pre></div></div>
+<p>This command launches your Kit-based app using the <code class="language-plaintext highlighter-rouge">.kit</code> file generated earlier. Logs and errors if any, are printed in the terminal. An Omniverse windows opens up. 
+To verify if the installation is successful, ensure that the title or app name matches the name you chose and the Omniverse viewport is open. 
+If the app fails to start:</p>
+<ul>
+<li>Check the terminal output in Visual Studio Code for Python or config errors.</li>
+<li>Review the files in the <code>logs/</code> directory.</li>
+<li>Fix any missing paths or extensions, then run the <code>.\repo.bat test</code> again.</li>
+</ul>
+
+<h2 id="try-your-first-customization">Try your first customization</h2>
+<p>One of the easiest ways to customize your app is by choosing which extensions your app loads.</p>
+<ol>
+<li>Open your app's <code>.kit</code> file. For example, <code>apps/my_kit_app.kit</code></li>
+<li>Look for a section named <code>[settings.app.exts]</code></li>
+<li>You can add or remove extensions here. <code>"omni.kit.window.console" = {}</code></li>
+<li>Save the file and rerun <code>.\repo.bat test</code></li>
+</ol>
+<p>If the console extension is enabled, you’ll see an additional console window or menu entry, depending on your configuration.</p>
 <blockquote>
-  <p>Tip: Open PowerShell as your main terminal for this tutorial. You can search for “PowerShell” in the Start menu and choose <em>Windows PowerShell</em> or <em>PowerShell 7</em>.</p>
+  <p>Tip: The <code class="language-plaintext highlighter-rouge">.kit</code> file is your app’s composition root: it controls which pieces of functionality (extensions) are brought together to form your application.</p>
 </blockquote>
 
-<hr />
-
-<h2 id="3-set-up-your-workspace">3. Set up your workspace</h2>
-
-<p>Pick a folder where you keep your dev projects. For example:</p>
-
-<p><code class="language-plaintext highlighter-rouge">powershell cd C:\Users\&lt;your-name&gt;\dev</code></p>
-
-<p>If this dev folder does not exist yet, create it:</p>
-
-<p><code class="language-plaintext highlighter-rouge">mkdir C:\Users\&lt;your-name&gt;\dev
-cd C:\Users\&lt;your-name&gt;\dev
-</code></p>
-
-<p>Replace <code class="language-plaintext highlighter-rouge">&lt;your-name&gt;</code> with your actual Windows username.</p>
+<h2 id="next-steps">Next steps</h2>
+<p>Create your own extension under <code class="language-plaintext highlighter-rouge">exts/</code> and register it in your <code class="language-plaintext highlighter-rouge">.kit</code> file.
+Add a custom menu item, tool window, or viewport overlay. Integrate Omniverse features such as USD scene loading or RTX rendering. 
+This is a solid foundation for a more advanced tutorial where you walk through building a specific tool or workflow inside Omniverse Kit.</p>
 
         
       </section>
@@ -277,7 +346,7 @@ cd C:\Users\&lt;your-name&gt;\dev
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-11-22T11:35:09-08:00">November 22, 2025</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-02-11T23:09:30-08:00">February 11, 2026</time></p>
 
       </footer>
 
@@ -286,10 +355,10 @@ cd C:\Users\&lt;your-name&gt;\dev
       
   <nav class="pagination">
     
-      <a href="/anusha-jeyaseelan/portfolio/claude-doc/" class="pagination--pager" title="Claude Code Documentation">Previous</a>
+      <a href="/anusha-jeyaseelan/anusha-portfolio/nvidia-fern-portfolio" class="pagination--pager" title="Architecting NVIDIA’s Documentation-as-a-Platform">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/anusha-jeyaseelan/omniverse/kit-extension/" class="pagination--pager" title="Creating a Custom Omniverse Kit Extension">Next</a>
     
   </nav>
 
@@ -328,7 +397,7 @@ cd C:\Users\&lt;your-name&gt;\dev
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Anusha Jeyaseelan</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Anusha Jeyaseelan</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
