@@ -1,7 +1,7 @@
 title: "Anusha Jeyaseelan"
-subtitle: "Technical Writer and Content Strategist | AWS | Developer Infrastructure"
+subtitle: "Senior Content Workflow Architect | Metadata, Validation & Developer Enablement"
 
-url: "https://github.com/anushjeya/anusha-jeyaseelan"
+url: "https://anushjeya.github.io"
 baseurl: "/anusha-jeyaseelan"
 
 # Collections
@@ -12,19 +12,9 @@ collections:
     output: true
     permalink: /:collection/:name/
 
-show_excerpts: false
+show_excerpts: true
 
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "aqua"
-
-sass:
-  sass_dir: assets/css
-  style: compressed
-
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge
 
 plugins:
   - jekyll-include-cache
@@ -36,12 +26,23 @@ plugins:
 author:
   name: "Anusha Jeyaseelan"
   avatar: "/assets/images/profile.jpg"
-  bio: "Technical Writer • Cloud & Developer Infrastructure"
-  location: "San Francisco Bay Area"
+  bio: "Senior Content Workflow Architect • Metadata • Validation • Developer Enablement"
+  location: "San Jose / Bay Area, CA"
   links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:anushajeyaseelan01@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/anushajeyaseelan/"
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/anushajeyaseelan"
+      url: "https://github.com/anushjeya/anusha-jeyaseelan"
+
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true

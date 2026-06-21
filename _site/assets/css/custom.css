@@ -1,0 +1,191 @@
+/* Recruiter-friendly visual polish for Anusha Jeyaseelan portfolio */
+:root {
+  --aj-navy: #183b56;
+  --aj-blue: #2f80ed;
+  --aj-blue-soft: #eaf4ff;
+  --aj-green-soft: #f1fbf4;
+  --aj-mint: #e7f7ee;
+  --aj-border: #d9e2ec;
+  --aj-text: #2f3437;
+  --aj-muted: #66737d;
+  --aj-card: #ffffff;
+  --aj-shadow: 0 12px 30px rgba(16, 42, 67, 0.08);
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(47,128,237,.08), transparent 28rem),
+    radial-gradient(circle at 95% 12%, rgba(39,174,96,.08), transparent 26rem),
+    linear-gradient(180deg, #f8fbff 0%, #f7fff9 100%) !important;
+  color: var(--aj-text);
+}
+
+.masthead {
+  background: rgba(255,255,255,.88) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(217, 226, 236, .95) !important;
+  box-shadow: 0 4px 22px rgba(16, 42, 67, .05);
+}
+
+.site-title,
+.greedy-nav a.site-title {
+  color: var(--aj-navy) !important;
+  font-weight: 800;
+}
+
+.greedy-nav .visible-links a {
+  color: #4f5b66 !important;
+}
+.greedy-nav .visible-links a:hover {
+  color: var(--aj-blue) !important;
+}
+
+.initial-content,
+.page,
+.archive {
+  background: transparent !important;
+}
+
+.page__inner-wrap {
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(217, 226, 236, .75);
+  border-radius: 22px;
+  padding: 2rem 2.25rem;
+  box-shadow: var(--aj-shadow);
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.archive__item-title,
+.page__title {
+  color: var(--aj-navy);
+}
+
+.page__content h2 {
+  border-bottom: 2px solid rgba(47,128,237,.18);
+  padding-bottom: .45rem;
+}
+
+.author__avatar img {
+  border: 3px solid #ffffff;
+  box-shadow: 0 10px 24px rgba(16, 42, 67, .12);
+}
+
+.author__content,
+.author__urls-wrapper {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(217, 226, 236, .65);
+  border-radius: 18px;
+  padding: .75rem;
+}
+
+/* Portfolio cards */
+.portfolio-hero,
+.featured-card,
+.portfolio-card,
+.about-callout,
+.about-card,
+.home-card {
+  background: rgba(255,255,255,.92) !important;
+  border: 1px solid rgba(217, 226, 236, .95) !important;
+  box-shadow: var(--aj-shadow);
+}
+
+.portfolio-hero {
+  background: linear-gradient(135deg, #ffffff 0%, var(--aj-blue-soft) 54%, var(--aj-green-soft) 100%) !important;
+}
+
+.featured-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f5faff 100%) !important;
+  border-left: 5px solid var(--aj-blue) !important;
+}
+
+.portfolio-card,
+.about-card,
+.home-card {
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.portfolio-card:hover,
+.about-card:hover,
+.home-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(47,128,237,.45) !important;
+  box-shadow: 0 18px 38px rgba(16, 42, 67, .12);
+}
+
+.portfolio-tag,
+.about-pill,
+.skill-pill {
+  background: #ffffff;
+  color: var(--aj-navy);
+  border: 1px solid rgba(47,128,237,.22);
+  box-shadow: 0 4px 12px rgba(16,42,67,.04);
+}
+
+.card-meta,
+.eyebrow {
+  color: var(--aj-blue) !important;
+}
+
+a,
+.card-link {
+  color: #2672c9;
+}
+a:hover,
+.card-link:hover {
+  color: #174d86;
+}
+
+.btn,
+.btn--primary {
+  border-radius: 999px !important;
+  box-shadow: 0 10px 20px rgba(47,128,237,.18);
+}
+
+/* About page custom components */
+.about-callout {
+  border-radius: 22px;
+  padding: 1.4rem 1.6rem;
+  margin: 1rem 0 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f8ff 60%, #f2fff6 100%) !important;
+}
+.about-callout p:last-child { margin-bottom: 0; }
+.about-pill-row,
+.skill-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: .9rem;
+}
+.about-pill,
+.skill-pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: .35rem .6rem;
+  font-size: .76rem;
+  font-weight: 700;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+.about-card {
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+}
+.about-card h3 { margin-top: 0; margin-bottom: .45rem; }
+.about-card p { margin-bottom: 0; }
+
+@media (max-width: 768px) {
+  .page__inner-wrap {
+    padding: 1.35rem 1.15rem;
+    border-radius: 16px;
+  }
+  .masthead__inner-wrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

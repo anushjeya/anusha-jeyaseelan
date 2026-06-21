@@ -1,105 +1,50 @@
 ---
+title: "OpenUSD & Omniverse Kit Learning Project"
 layout: single
-title: "Omniverse Getting Started Guide (GSG)"
-permalink: /omniverse/overview/
-classes: wide            # use full width, less wasted space
-sidebar:
-  nav: omniverse_docs    # uses the Omniverse sidebar nav
-author_profile: false
 toc: true
-toc_sticky: true
-
+tags: [openusd, omniverse, kit, digital-twins, learning-project]
+description: "A learning project focused on OpenUSD asset structure, composition, metadata, validation, packaging, and publishing concepts."
+links:
+  - name: View Project
+    url: https://github.com/anushjeya/omniverse-first-extension
 ---
-This guide walks you through creating your first NVIDIA Omniverse Kit App based application on windows using NVIDIA’s official Kit App Template using the command line. By the end, you will:
-- Install the core Omniverse tools you need
-- Clone the Kit App Template repo
-- Generate a new Kit-based app with `repo.bat template new`
-- Run and verify your app on Windows
-- Know where to start customizing behavior with extensions
 
-## Prerequisites
-Before you start the installation process, make sure you have:
-- Supported NVIDIA GPU with recent drivers
-- Windows 10/11
-- NVIDIA Omniverse Launcher installed and logged in
-- At least one Kit-based Omniverse app installed (for example, *Omniverse Code* or *USD Composer*)
-- Git installed and available in your `PATH`
-- PowerShell or Command Prompt
-> Tip: Open PowerShell as your main terminal for this tutorial. You can search for “PowerShell” in the Start menu and choose *Windows PowerShell* or *PowerShell 7*.
+## Overview
 
-## Set up your workspace
-Pick a folder where you keep want to install the Kit App Template. For example:
-```bash
-cd C:\Users\<your-name>\dev
-```
-If you want to create a new folder, use:
-```bash
-mkdir C:\Users\<your-name>\dev 
-cd C:\Users\<your-name>\dev
-```
-Replace `<your-name>` with your actual Windows username.
+This is a learning project focused on building practical familiarity with NVIDIA Omniverse, Kit-based application concepts, and OpenUSD workflows.
 
-## Clone the NVIDIA Kit App Template 
-Clone the official Kit App Template repository into your dev folder. Navigate into your new `dev` directory and clone the official template repository. 
+The purpose is not to present production OpenUSD ownership. It is to show how I am actively connecting my content workflow architecture background to OpenUSD and digital twin asset workflows.
 
-The following command downloads the Kit App Template into your local folder. You should now see files such as ```repo.bat```, ```source/```, ```apps/```, and ```exts/```.
+## Learning objectives
 
-```bash
-git clone https://github.com/NVIDIA-Omniverse/kit-app-template.git
-cd kit-app-template
-```
-## Create a new NVIDIA Kit-based app from the template 
-The Kit App template includes a helper script, ```repo.bat``` which builds out the new app for you. 
-Ensure you are in the ```kit-app-template``` folder and run:
-```bash
-.\repo.bat template new
-```
-You will be prompted for a few values, for instance:
-<ul>
-<li>App name - The name for the Kit-based app. For example, first_app</li>
-<li>Destination folder - You can either choose the default folder or any folder of your choice.</li>
-</ul>
+- Understand OpenUSD stages, prims, layers, references, payloads, variants, and composition concepts
+- Explore how reusable assets are structured, packaged, validated, published, and discovered
+- Map OpenUSD asset workflows to metadata, taxonomy, validation, publishing, and lifecycle concepts
+- Create contributor-friendly guidance that helps technical users repeat a workflow successfully
 
-## Explore the folder/project structure
-Open the app folder in your editor, such as Visual Studio Code. 
-<ul>
-  <li>apps/&lt;your_app_name&gt;.kit – The main configuration file that defines your Omniverse application. It specifies which extensions to load, window layout, and startup settings.</li>
-  <li>exts/ – A folder where your custom extensions live. Each extension is its own package with:
-    <ul>
-      <li>config/extension.toml – Defines extension metadata, load behavior, and required dependencies for Omniverse Kit.</li>
-      <li>exts/&lt;extension_name&gt;/ – Python files that define the behavior of your Omniverse extension.</li>
-    </ul>
-  </li>
-  <li>logs/ – Created after you run the app. Contains runtime logs useful for debugging startup failures.</li>
-</ul>
+## Why this matters
 
-## Run your app 
+OpenUSD and digital twin ecosystems depend on more than file creation. Reusable assets need supporting workflows:
 
-In your Windows command terminal, from the root of your generated app repo, run:
-```bash
-.\repo.bat test
-```
-This command launches your Kit-based app using the `.kit` file generated earlier. Logs and errors if any, are printed in the terminal. An Omniverse windows opens up. 
-To verify if the installation is successful, ensure that the title or app name matches the name you chose and the Omniverse viewport is open. 
-If the app fails to start: 
-<ul>
-<li>Check the terminal output in Visual Studio Code for Python or config errors.</li>
-<li>Review the files in the <code>logs/</code> directory.</li>
-<li>Fix any missing paths or extensions, then run the <code>.\repo.bat test</code> again.</li>
-</ul>
+| Workflow area | Why it matters |
+|---|---|
+| Asset structure | Helps teams understand what is included and how the asset is organized |
+| Composition | Supports reuse through layers, references, variants, and payloads |
+| Metadata | Enables cataloging, discovery, ownership, and lifecycle tracking |
+| Validation | Confirms that assets meet readiness and publishing standards |
+| Packaging | Makes assets portable and easier to submit or reuse |
+| Publishing | Moves approved assets into trusted surfaces such as catalogs or browsers |
 
-## Try your first customization
-One of the easiest ways to customize your app is by choosing which extensions your app loads.
-<ol>
-<li>Open your app's <code>.kit</code> file. For example, <code>apps/my_kit_app.kit</code></li>
-<li>Look for a section named <code>[settings.app.exts]</code></li>
-<li>You can add or remove extensions here. <code>"omni.kit.window.console" = {}</code></li>
-<li>Save the file and rerun <code>.\repo.bat test</code></li>
-</ol>
-If the console extension is enabled, you’ll see an additional console window or menu entry, depending on your configuration.
-> Tip: The `.kit` file is your app’s composition root: it controls which pieces of functionality (extensions) are brought together to form your application.
+## Content workflow angle
 
-## Next steps 
-Create your own extension under `exts/` and register it in your `.kit` file.
-Add a custom menu item, tool window, or viewport overlay. Integrate Omniverse features such as USD scene loading or RTX rendering. 
-This is a solid foundation for a more advanced tutorial where you walk through building a specific tool or workflow inside Omniverse Kit.
+My interest is in the operational layer around reusable technical assets: how contributors prepare assets, how metadata requirements are defined, how validation works, how approved assets are published, and how users discover the right asset later.
+
+That connects directly with my experience building structured developer content systems, contributor workflows, metadata models, readiness scoring, and docs-as-code publishing operations.
+
+## Next steps
+
+- Continue NVIDIA Learn OpenUSD curriculum
+- Build a small sample OpenUSD asset package
+- Document required metadata fields for a reusable digital twin asset
+- Create a sample validation checklist
+- Publish a contributor-facing guide for packaging and submitting a reusable asset
