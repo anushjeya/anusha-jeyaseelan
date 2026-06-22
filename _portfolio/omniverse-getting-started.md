@@ -1,9 +1,9 @@
 ---
-title: "OpenUSD & Omniverse Kit Learning Project"
+title: "OpenUSD & Omniverse Kit Workflow Learning Project"
 layout: single
 permalink: /portfolio/omniverse-getting-started/
 tags: [openusd, omniverse, kit, digital-twins, learning-project]
-description: "A learning project focused on OpenUSD asset structure, composition, metadata, validation, packaging, and publishing concepts."
+description: "A learning project connecting Omniverse Kit, OpenUSD concepts, reusable asset structure, metadata, validation, packaging, publishing, and digital twin workflows."
 links:
   - name: View Project
     url: https://github.com/anushjeya/omniverse-first-extension
@@ -15,7 +15,7 @@ toc_sticky: true
 
 ## Overview
 
-This is a learning project focused on building practical familiarity with NVIDIA Omniverse, Kit-based application concepts, and OpenUSD workflows.
+This is a learning project focused on building practical familiarity with NVIDIA Omniverse, Kit-based application concepts, and OpenUSD workflows for reusable digital twin assets.
 
 The purpose is not to present production OpenUSD ownership. It is to show how I am actively connecting my content workflow architecture background to OpenUSD and digital twin asset workflows.
 

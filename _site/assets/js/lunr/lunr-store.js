@@ -59,8 +59,8 @@ var store = [{
         "url": "/anusha-jeyaseelan/anusha-portfolio/nvidia-fern-portfolio",
         "teaser": null
       },{
-        "title": "OpenUSD & Omniverse Kit Learning Project",
-        "excerpt":"Overview This is a learning project focused on building practical familiarity with NVIDIA Omniverse, Kit-based application concepts, and OpenUSD workflows. The purpose is not to present production OpenUSD ownership. It is to show how I am actively connecting my content workflow architecture background to OpenUSD and digital twin asset workflows....","categories": [],
+        "title": "OpenUSD & Omniverse Kit Workflow Learning Project",
+        "excerpt":"Overview This is a learning project focused on building practical familiarity with NVIDIA Omniverse, Kit-based application concepts, and OpenUSD workflows for reusable digital twin assets. The purpose is not to present production OpenUSD ownership. It is to show how I am actively connecting my content workflow architecture background to OpenUSD...","categories": [],
         "tags": ["openusd","omniverse","kit","digital-twins","learning-project"],
         "url": "/anusha-jeyaseelan/portfolio/omniverse-getting-started/",
         "teaser": null
@@ -69,6 +69,18 @@ var store = [{
         "excerpt":"This tutorial walks you through creating a new Omniverse Kit extension, adding a simple user interface, and scripting a basic interaction with a 3D USD scene. Set up the extension project The easiest way to create a new extension is to use the Omniverse Kit command-line extension generator. Generate the...","categories": [],
         "tags": [],
         "url": "/anusha-jeyaseelan/omniverse/kit-extension/",
+        "teaser": null
+      },{
+        "title": "OpenUSD Asset Metadata & Validation Readiness",
+        "excerpt":"Overview This learning case study connects my content workflow architecture background to OpenUSD and digital twin asset operations. The focus is the operational layer around reusable assets: what metadata is required, how readiness is evaluated, what validation checks should exist, and how contributors can prepare assets for trusted publication and...","categories": [],
+        "tags": ["openusd","metadata","validation","digital-twins","asset-readiness"],
+        "url": "/anusha-jeyaseelan/portfolio/openusd-asset-metadata-validation/",
+        "teaser": null
+      },{
+        "title": "OpenUSD Packaging, Publishing & Discovery Workflow",
+        "excerpt":"Overview This learning case study outlines how I would approach a reusable OpenUSD asset workflow from contributor intake through packaging, validation, publishing, discovery, and lifecycle updates. The goal is to demonstrate the operating model I would bring to digital twin content operations: make the workflow clear, repeatable, measurable, and contributor-ready....","categories": [],
+        "tags": ["openusd","packaging","publishing","discovery","digital-twins"],
+        "url": "/anusha-jeyaseelan/portfolio/openusd-packaging-publishing/",
         "teaser": null
       },{
         "title": "Walmart Marketplace API Content Workflow Architecture",

@@ -1,121 +1,116 @@
 ---
-layout: single
+layout: default
 title: "Home"
 permalink: /
-classes: wide
 author_profile: false
-toc: false
 ---
 
-<div class="aj-home-page">
-  <section class="aj-home-hero aj-home-hero--no-image">
-    <p class="aj-eyebrow">Senior Content Workflow Architect · Metadata · Validation · Developer Enablement</p>
-    <h1>I design workflow systems that make complex technical assets easier to package, validate, publish, discover, and reuse.</h1>
-    <p class="aj-home-lede">
-      My work connects content strategy, developer documentation, metadata models, contributor workflows, readiness criteria, and publishing operations across API, infrastructure, AI-enabled, and emerging digital twin ecosystems.
+<style>
+  .aj-home { max-width: 1180px; margin: 0 auto; padding: 4.5rem 1.5rem 4rem; }
+  .aj-home * { box-sizing: border-box; }
+  .aj-hero { padding: 3rem; border: 1px solid #dbe4f0; border-radius: 28px; background: linear-gradient(135deg, #ffffff 0%, #f4f7fc 55%, #edf4ff 100%); box-shadow: 0 20px 60px rgba(30, 45, 72, .08); }
+  .aj-eyebrow { margin: 0 0 .75rem; color: #5168b7; font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .11em; }
+  .aj-hero h1 { max-width: 920px; margin: 0; color: #1f2e46; font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1.02; letter-spacing: -0.055em; }
+  .aj-hero p.aj-lede { max-width: 820px; margin: 1.35rem 0 0; color: #445064; font-size: 1.22rem; line-height: 1.65; }
+  .aj-actions { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: 1.8rem; }
+  .aj-button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: .82rem 1.15rem; border-radius: 12px; background: #5168b7; color: #ffffff !important; font-weight: 800; text-decoration: none !important; box-shadow: 0 12px 28px rgba(81, 104, 183, .22); }
+  .aj-button:hover { background: #1f2e46; color: #ffffff !important; transform: translateY(-1px); }
+  .aj-button-secondary { background: #ffffff; color: #1f2e46 !important; border: 1px solid #d6e0ee; box-shadow: none; }
+  .aj-button-secondary:hover { background: #f4f7fc; color: #1f2e46 !important; }
+  .aj-proof { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 1.35rem 0 2.4rem; }
+  .aj-proof-card { padding: 1.25rem; border: 1px solid #dbe4f0; border-radius: 18px; background: #ffffff; box-shadow: 0 12px 34px rgba(30, 45, 72, .05); }
+  .aj-proof-card strong { display: block; color: #5168b7; font-size: 1.55rem; line-height: 1.1; }
+  .aj-proof-card span { display: block; margin-top: .45rem; color: #556173; font-size: .95rem; line-height: 1.45; }
+  .aj-section-head { max-width: 860px; margin: 2.8rem 0 1.2rem; }
+  .aj-section-head h2 { margin: 0; color: #1f2e46; font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.12; letter-spacing: -.035em; }
+  .aj-section-head p { color: #4d596b; font-size: 1.08rem; line-height: 1.65; }
+  .aj-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; }
+  .aj-card { display: flex; flex-direction: column; min-height: 300px; padding: 1.55rem; border: 1px solid #dbe4f0; border-radius: 22px; background: #ffffff; box-shadow: 0 18px 46px rgba(30, 45, 72, .07); }
+  .aj-card-featured { grid-column: span 2; background: linear-gradient(135deg, #ffffff 0%, #f6f8ff 100%); }
+  .aj-label { margin: 0 0 .65rem; color: #5f7890; font-size: .74rem; font-weight: 900; text-transform: uppercase; letter-spacing: .1em; }
+  .aj-card h3 { margin: 0 0 .7rem; color: #1f2e46; font-size: 1.45rem; line-height: 1.18; letter-spacing: -.025em; }
+  .aj-card h3 a { color: #1f2e46 !important; text-decoration: none; }
+  .aj-card h3 a:hover { color: #5168b7 !important; text-decoration: underline; text-underline-offset: .15em; }
+  .aj-card p { color: #4d596b; font-size: 1rem; line-height: 1.62; }
+  .aj-card .aj-card-link { margin-top: auto; align-self: flex-start; display: inline-flex; padding: .7rem .95rem; border-radius: 11px; background: #5168b7; color: #ffffff !important; font-weight: 800; text-decoration: none !important; }
+  .aj-card .aj-card-link:hover { background: #1f2e46; color: #ffffff !important; }
+  .aj-note { margin-top: 2.4rem; padding: 1.25rem 1.4rem; border-left: 5px solid #5168b7; border-radius: 14px; background: #f6f8ff; color: #465266; line-height: 1.6; }
+  @media (max-width: 900px) { .aj-home { padding-top: 2.5rem; } .aj-hero { padding: 2rem; } .aj-proof, .aj-grid { grid-template-columns: 1fr; } .aj-card-featured { grid-column: span 1; } }
+</style>
+
+<div class="aj-home">
+  <section class="aj-hero">
+    <p class="aj-eyebrow">Content workflow architecture · Metadata · Validation · Publishing · Reuse</p>
+    <h1>I build workflow systems that make technical assets easier to package, validate, publish, discover, and reuse.</h1>
+    <p class="aj-lede">
+      I turn fragmented engineering, API, infrastructure, AI, and emerging digital twin inputs into structured, contributor-ready systems with clear metadata, readiness criteria, validation standards, publishing workflows, and lifecycle governance.
     </p>
-    <div class="aj-home-actions">
-      <a class="aj-primary-link-button" href="{{ '/portfolio/' | relative_url }}">View role-aligned case studies</a>
-      <a class="aj-secondary-link-button" href="{{ '/about/' | relative_url }}">About my approach</a>
+    <div class="aj-actions">
+      <a class="aj-button" href="{{ '/portfolio/' | relative_url }}">View case studies</a>
+      <a class="aj-button aj-button-secondary" href="{{ '/about/' | relative_url }}">About my approach</a>
     </div>
   </section>
 
-  <section class="aj-home-proof-strip aj-home-proof-strip--top" aria-label="Core strengths">
-    <div>
-      <strong>Workflow architecture</strong>
-      <span>Intake, review, validation, publishing, lifecycle updates</span>
-    </div>
-    <div>
-      <strong>Metadata & discovery</strong>
-      <span>Taxonomy, structured profiles, search readiness, reuse</span>
-    </div>
-    <div>
-      <strong>Contributor enablement</strong>
-      <span>Templates, examples, standards, governance</span>
-    </div>
+  <section class="aj-proof" aria-label="Selected proof points">
+    <div class="aj-proof-card"><strong>100+</strong><span>API endpoints structured with scalable content patterns</span></div>
+    <div class="aj-proof-card"><strong>30–40%</strong><span>faster delivery through readiness scoring and templates</span></div>
+    <div class="aj-proof-card"><strong>25–30%</strong><span>higher consistency through standards and reusable patterns</span></div>
+    <div class="aj-proof-card"><strong>18%+</strong><span>developer satisfaction lift through workflow-based enablement</span></div>
   </section>
 
-  <section class="aj-home-metrics" aria-label="Selected impact metrics">
-    <div>
-      <strong>100+</strong>
-      <span>Marketplace API endpoints structured with scalable content patterns</span>
-    </div>
-    <div>
-      <strong>30–40%</strong>
-      <span>faster content delivery through readiness scoring and templates</span>
-    </div>
-    <div>
-      <strong>25–30%</strong>
-      <span>higher consistency through standards, metadata, and workflow patterns</span>
-    </div>
-    <div>
-      <strong>18%+</strong>
-      <span>developer satisfaction lift through workflow-based enablement</span>
-    </div>
-  </section>
-
-  <section class="aj-digital-twin-callout" aria-label="Digital twin workflow relevance">
-    <div>
-      <p class="aj-eyebrow">Why this matters for digital twins</p>
-      <h2>Reusable technical assets need the same operating model as strong developer platforms.</h2>
-      <p>
-        OpenUSD and digital twin ecosystems depend on more than content creation. Assets need clear intake standards, required metadata, validation rules, packaging guidance, publishing workflows, lifecycle governance, and discovery patterns so contributors can submit trusted assets and users can find and reuse them confidently.
-      </p>
-    </div>
-  </section>
-
-  <section class="aj-home-section-intro">
-    <p class="aj-eyebrow">Selected case studies for NVIDIA-style workflows</p>
-    <h2>Case studies aligned to content pipelines, asset readiness, metadata quality, and reusable technical systems</h2>
+  <section class="aj-section-head">
+    <p class="aj-eyebrow">Role-aligned case studies</p>
+    <h2>Selected work aligned to OpenUSD, digital twin content operations, metadata quality, asset readiness, and contributor enablement.</h2>
     <p>
-      These samples emphasize the work behind trusted technical ecosystems: defining workflow standards, metadata and taxonomy, validation readiness, publishing patterns, lifecycle governance, and contributor enablement.
+      The case studies below focus on the operating model behind trusted technical ecosystems: intake, metadata, validation, publishing, discovery, lifecycle updates, and reuse.
     </p>
   </section>
 
-  <section class="aj-home-case-grid" aria-label="Featured case studies">
-    <article class="aj-home-case-card aj-home-case-card--featured">
-      <p class="aj-card-label">Featured workflow case study</p>
+  <section class="aj-grid" aria-label="Featured case studies">
+    <article class="aj-card aj-card-featured">
+      <p class="aj-label">Featured workflow case study</p>
       <h3><a href="{{ '/portfolio/content-workflow-architecture/' | relative_url }}">Content Workflow Architecture for Reusable Technical Assets</a></h3>
-      <p>
-        A role-aligned framework for turning contributor inputs into structured, validated, reusable, and discoverable technical assets through metadata, validation readiness, publishing, lifecycle management, and reuse patterns.
-      </p>
-      <a class="aj-card-link" href="{{ '/portfolio/content-workflow-architecture/' | relative_url }}">Read case study →</a>
+      <p>A role-aligned framework for turning contributor inputs into structured, validated, reusable, and discoverable technical assets through metadata, validation readiness, publishing, lifecycle management, and reuse patterns.</p>
+      <a class="aj-card-link" href="{{ '/portfolio/content-workflow-architecture/' | relative_url }}">Read case study</a>
     </article>
 
-    <article class="aj-home-case-card">
-      <p class="aj-card-label">Developer platform workflows</p>
+    <article class="aj-card">
+      <p class="aj-label">OpenUSD readiness</p>
+      <h3><a href="{{ '/portfolio/openusd-asset-metadata-validation/' | relative_url }}">OpenUSD Asset Metadata & Validation Readiness</a></h3>
+      <p>A learning case study focused on required asset metadata, readiness criteria, validation checks, and catalog/search quality for reusable digital twin assets.</p>
+      <a class="aj-card-link" href="{{ '/portfolio/openusd-asset-metadata-validation/' | relative_url }}">View OpenUSD case study</a>
+    </article>
+
+    <article class="aj-card">
+      <p class="aj-label">OpenUSD workflow model</p>
+      <h3><a href="{{ '/portfolio/openusd-packaging-publishing/' | relative_url }}">OpenUSD Packaging, Publishing & Discovery Workflow</a></h3>
+      <p>A contributor-ready model for intake, packaging, validation, publishing, search discovery, lifecycle updates, and reuse of approved digital twin assets.</p>
+      <a class="aj-card-link" href="{{ '/portfolio/openusd-packaging-publishing/' | relative_url }}">View workflow model</a>
+    </article>
+
+    <article class="aj-card">
+      <p class="aj-label">Omniverse learning project</p>
+      <h3><a href="{{ '/portfolio/omniverse-getting-started/' | relative_url }}">OpenUSD & Omniverse Kit Workflow Learning Project</a></h3>
+      <p>A hands-on learning project connecting content workflow architecture to OpenUSD asset structure, composition, metadata, validation, packaging, publishing, and reuse.</p>
+      <a class="aj-card-link" href="{{ '/portfolio/omniverse-getting-started/' | relative_url }}">View learning project</a>
+    </article>
+
+    <article class="aj-card">
+      <p class="aj-label">Developer platform workflows</p>
       <h3><a href="{{ '/portfolio/walmart-content-workflows/' | relative_url }}">Walmart Marketplace API Content Workflow Architecture</a></h3>
-      <p>
-        Developer content workflows, metadata models, readiness scoring, reusable templates, AI-assisted authoring, and global API hub unification.
-      </p>
-      <a class="aj-card-link" href="{{ '/portfolio/walmart-content-workflows/' | relative_url }}">View case study →</a>
+      <p>Developer content workflows, metadata models, readiness scoring, reusable templates, AI-assisted authoring, and global API hub unification.</p>
+      <a class="aj-card-link" href="{{ '/portfolio/walmart-content-workflows/' | relative_url }}">View case study</a>
     </article>
 
-    <article class="aj-home-case-card">
-      <p class="aj-card-label">OpenUSD / Omniverse readiness</p>
-      <h3><a href="{{ '/portfolio/omniverse-getting-started/' | relative_url }}">OpenUSD & Omniverse Kit Learning Project</a></h3>
-      <p>
-        A learning project connecting content workflow architecture to OpenUSD asset structure, composition, metadata, validation, packaging, publishing, and digital twin asset reuse.
-      </p>
-      <a class="aj-card-link" href="{{ '/portfolio/omniverse-getting-started/' | relative_url }}">View learning project →</a>
-    </article>
-
-    <article class="aj-home-case-card">
-      <p class="aj-card-label">Infrastructure content systems</p>
+    <article class="aj-card">
+      <p class="aj-label">Infrastructure systems</p>
       <h3><a href="{{ '/portfolio/cisco-content-systems/' | relative_url }}">Cisco Infrastructure Content Systems</a></h3>
-      <p>
-        Docs-as-code, CI/CD publishing, API/SDK documentation, and release-aligned content operations for networking, Kubernetes, SD-WAN, and server platforms.
-      </p>
-      <a class="aj-card-link" href="{{ '/portfolio/cisco-content-systems/' | relative_url }}">View case study →</a>
-    </article>
-
-    <article class="aj-home-case-card">
-      <p class="aj-card-label">Cloud security developer enablement</p>
-      <h3><a href="{{ '/portfolio/aws-security-docs/' | relative_url }}">AWS Security Services Documentation Portfolio</a></h3>
-      <p>
-        API references, SDK examples, developer guides, internal knowledge-base artifacts, and workflow-based enablement for cloud security services.
-      </p>
-      <a class="aj-card-link" href="{{ '/portfolio/aws-security-docs/' | relative_url }}">View case study →</a>
+      <p>Docs-as-code, CI/CD publishing, API/SDK documentation, and release-aligned content operations for networking, Kubernetes, SD-WAN, and server platforms.</p>
+      <a class="aj-card-link" href="{{ '/portfolio/cisco-content-systems/' | relative_url }}">View case study</a>
     </article>
   </section>
+
+  <div class="aj-note">
+    <strong>Digital twin relevance:</strong> reusable OpenUSD assets need clear standards for metadata, packaging, validation, publishing, discovery, lifecycle updates, and contributor enablement — the same operating model I build for developer and infrastructure content systems.
+  </div>
 </div>
