@@ -4,6 +4,10 @@ layout: single
 permalink: /portfolio/cisco-content-systems/
 tags: [cisco, docs-as-code, ci-cd, networking, infrastructure]
 description: "Docs-as-code, CI/CD publishing, API/SDK documentation, and release-aligned content operations for networking and server platforms."
+author_profile: false
+toc: true
+toc_label: "On this page"
+toc_sticky: true
 ---
 
 ## Overview

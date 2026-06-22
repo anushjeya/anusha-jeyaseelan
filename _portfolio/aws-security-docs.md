@@ -4,6 +4,10 @@ layout: single
 permalink: /portfolio/aws-security-docs/
 tags: [aws, api-documentation, sdk-examples, cloud-security]
 description: "API references, SDK examples, developer guides, knowledge base artifacts, and workflow-based enablement for cloud security services."
+author_profile: false
+toc: true
+toc_label: "On this page"
+toc_sticky: true
 ---
 
 ## Overview

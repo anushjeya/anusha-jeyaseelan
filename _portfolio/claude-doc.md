@@ -4,6 +4,10 @@ layout: single
 permalink: /portfolio/claude-doc/
 tags: [ai-assisted-authoring, developer-enablement, prompt-design]
 description: "Structured guidance for AI-assisted coding workflows, prompt/action templates, configuration patterns, and developer onboarding."
+author_profile: false
+toc: true
+toc_label: "On this page"
+toc_sticky: true
 ---
 
 ## Overview

@@ -7,6 +7,10 @@ description: "A hands-on tutorial demonstrating dataset preparation, S3 integrat
 links:
   - name: GitHub Repo
     url: https://github.com/anusha/sagemaker-tutorial
+author_profile: false
+toc: true
+toc_label: "On this page"
+toc_sticky: true
 ---
 
 ## Overview

@@ -4,6 +4,10 @@ layout: single
 permalink: /portfolio/walmart-content-workflows/
 tags: [developer-platforms, api-documentation, metadata, ai-assisted-authoring]
 description: "Developer content workflows, metadata models, readiness scoring, reusable templates, AI-assisted authoring, and global API hub unification."
+author_profile: false
+toc: true
+toc_label: "On this page"
+toc_sticky: true
 ---
 
 ## Overview

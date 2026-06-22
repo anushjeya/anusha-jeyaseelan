@@ -1,12 +1,16 @@
 ---
 title: "OpenUSD & Omniverse Kit Learning Project"
 layout: single
-toc: true
+permalink: /portfolio/omniverse-getting-started/
 tags: [openusd, omniverse, kit, digital-twins, learning-project]
 description: "A learning project focused on OpenUSD asset structure, composition, metadata, validation, packaging, and publishing concepts."
 links:
   - name: View Project
     url: https://github.com/anushjeya/omniverse-first-extension
+author_profile: false
+toc: true
+toc_label: "On this page"
+toc_sticky: true
 ---
 
 ## Overview

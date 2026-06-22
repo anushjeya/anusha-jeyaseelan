@@ -4,6 +4,10 @@ layout: single
 permalink: /portfolio/content-workflow-architecture/
 tags: [content-workflow, metadata, validation, publishing, developer-enablement]
 description: "A featured case study on metadata, validation, publishing, contributor enablement, and reusable technical asset workflows."
+author_profile: false
+toc: true
+toc_label: "On this page"
+toc_sticky: true
 ---
 
 ## Overview

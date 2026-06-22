@@ -1,5 +1,6 @@
 title: "Anusha Jeyaseelan"
 subtitle: "Senior Content Workflow Architect | Metadata, Validation & Developer Enablement"
+description: "Portfolio of Anusha Jeyaseelan, a senior content workflow architect focused on metadata, validation, publishing systems, contributor workflows, and developer enablement."
 
 url: "https://anushjeya.github.io"
 baseurl: "/anusha-jeyaseelan"
@@ -14,6 +15,8 @@ collections:
 
 show_excerpts: true
 
+minimal_mistakes_skin: "default"
+
 remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
@@ -25,7 +28,7 @@ plugins:
 # Author info
 author:
   name: "Anusha Jeyaseelan"
-  avatar: "/assets/images/profile.jpg"
+  avatar: ""
   bio: "Senior Content Workflow Architect • Metadata • Validation • Developer Enablement"
   location: "San Jose / Bay Area, CA"
   links:
@@ -45,4 +48,7 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      toc: true
+      toc_label: "On this page"
+      toc_sticky: true
